@@ -37,14 +37,17 @@ pinned: true
 
 在head里面加入如下内容
 
-`<style>
+
+
+
+` <style>
     li {margin: 0em 0;}
     button {min-height: 0px;}
     .aplayer {margin: 0 0 1.75em 0 !important;}
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>`
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script> `
 
 在footer中加入如下代码
 
