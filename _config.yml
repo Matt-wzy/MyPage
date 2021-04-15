@@ -77,12 +77,17 @@ disqus:  #shortname
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
-  clientID: 6ffac01b76dea001c652
+  clientID: 
   clientSecret: 
-  repo: MyPage
-  owner: Matt-wzy
+  repo: 
+  owner: 
   proxy:
-
+#gitalk:
+#  clientID: 6ffac01b76dea001c652
+#  clientSecret: 
+#  repo: MyPage
+#  owner: Matt-wzy
+#  proxy:
 # 输入Google Analytics web tracking code
 google_analytics: G-JTQJZJTQH6
 
