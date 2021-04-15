@@ -79,7 +79,7 @@ disqus:  #shortname
 gitalk:
   clientID: 6ffac01b76dea001c652
   clientSecret: 1838564326380a615388363720b11c756a20d139
-  repo: Matt-wzy/MyPage
+  repo: MyPage
   owner: Matt-wzy
   proxy:
 
