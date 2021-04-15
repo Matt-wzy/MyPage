@@ -16,7 +16,7 @@ pinned: true
 下面是原来的使用手册里面自带的内容。
 
 ------------
-#这一段是我加的
+# 这一段是我加的
 网页内网易云player使用教程：Powered by Aplayer
 
 <div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>
@@ -34,7 +34,7 @@ pinned: true
 [这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "这个页面")告诉你怎么配置到文档内部
 
 ------------
-#这一段是原文档有的内容
+# 这一段是原文档有的内容
 
 更简单的办法是使用[Typora](https://typora.io/)，这是一个全图形化界面，全实时预览的Markdown写作软件，非常轻量，而且免费。
 
