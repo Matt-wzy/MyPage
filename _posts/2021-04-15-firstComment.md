@@ -9,9 +9,14 @@ toc: true
 pinned: true
 ---
 
-这应该是我配置好loft（此GitHub pages的代码框架）之后的第一个博文，直接改使用手册document.
+这应该是我配置好[loffer](https://github.com/FromEndWorld/LOFFER "loffer")之后的第一个博文，直接修改使用手册document作为我的第一篇博客了（哈哈哈哈）.
 
 （疑惑性行为++）
+
+下面是原来的使用手册里面自带的内容。
+
+------------
+
 
 更简单的办法是使用[Typora](https://typora.io/)，这是一个全图形化界面，全实时预览的Markdown写作软件，非常轻量，而且免费。
 
