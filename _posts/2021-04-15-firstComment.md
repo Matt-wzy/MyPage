@@ -25,6 +25,8 @@ pinned: true
 
 `<div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>`
 
+（songid 30284674 ）
+
 - server 后面的是我们要用的音乐平台，可以填写的有`netease`, `tencent`, `kugou`, `xiami`, `baidu` 。这里我用的是网易 `server=”netease”`
 
 - type 后面可以填写 `song`, `playlist`, `album`, `search`, `artist`，分别是歌曲，歌单，专辑，搜索，歌手。这里我用的是歌单，所以 `type=”playlist”`。
