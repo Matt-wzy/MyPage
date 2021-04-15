@@ -15,6 +15,8 @@ pinned: true
 
 下面是原来的使用手册里面自带的内容。
 
+<div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>
+
 ------------
 
 
