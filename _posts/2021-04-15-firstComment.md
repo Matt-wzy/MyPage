@@ -48,6 +48,8 @@ pinned: true
 
 在footer中加入如下代码
 
+`<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>`
+
 ------------
 # 这一段是原文档有的内容
 
