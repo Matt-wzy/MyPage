@@ -78,7 +78,7 @@ disqus:  #shortname
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
   clientID: 6ffac01b76dea001c652
-  clientSecret: 1838564326380a615388363720b11c756a20d139
+  clientSecret: 
   repo: MyPage
   owner: Matt-wzy
   proxy:
