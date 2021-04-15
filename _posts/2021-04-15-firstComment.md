@@ -15,10 +15,16 @@ pinned: true
 
 下面是原来的使用手册里面自带的内容。
 
+------------
+#这一段是我加的
+网页内网易云player使用教程：Powered by Aplayer
+
 <div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>
 
-------------
 
+
+------------
+#这一段是原文档有的内容
 
 更简单的办法是使用[Typora](https://typora.io/)，这是一个全图形化界面，全实时预览的Markdown写作软件，非常轻量，而且免费。
 
