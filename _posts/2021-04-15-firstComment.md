@@ -31,6 +31,8 @@ pinned: true
 
 - id 是我们歌单的链接号码，这个数字我们可以登录网页版的网易云，打开一个歌单，从网址就能看出 id 是多少。
 
+[这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "这个页面")告诉你怎么配置到文档内部
+
 ------------
 #这一段是原文档有的内容
 
