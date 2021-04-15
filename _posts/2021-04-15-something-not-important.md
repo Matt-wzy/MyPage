@@ -6,7 +6,6 @@ author: Matt-wzy
 tags: [essay , emotion]
 comments: true
 toc: true
-pinned: false
 ---
 
 # 最近状态
