@@ -35,6 +35,19 @@ pinned: true
 
 [这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "这个页面")告诉你怎么配置到文档内部
 
+在head里面加入如下内容
+
+`<style>
+    li {margin: 0em 0;}
+    button {min-height: 0px;}
+    .aplayer {margin: 0 0 1.75em 0 !important;}
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>`
+
+在footer中加入如下代码
+
 ------------
 # 这一段是原文档有的内容
 
