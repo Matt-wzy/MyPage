@@ -41,4 +41,8 @@ toc: true
 首先，你需要在openwrt系统的路由器上面安排上局域网内部的SMB挂载，(如图)
 ![图：SMB挂载示例](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c98b21f-9e7e-4bcb-9142-940554115122/6a087eb0-d175-4b3d-9ac8-9f8cfef89ce3.png)
 
+然后，你需要找一个目录给KOD做网站的根目录，有外部储存最好，没有外部储存的话你内部储存搞一个新的分区也行。
 
+![](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c98b21f-9e7e-4bcb-9142-940554115122/6fa30b87-1c87-40cc-890a-86351e52ed12.png)
+上图这两个改成你路由器里面可读写的目录，可访问目录填写之前SMB挂载填上的共享文件夹。
+然后你就可以愉快地打开KOD访问你的文件啦~
