@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我校傻逼校园网下的文件传输
+title: 我校&*校园网下的文件传输
 date: 2021-04-16
 author: Matt-wzy
 tags: [essay]
