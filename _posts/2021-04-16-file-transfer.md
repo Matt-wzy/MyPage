@@ -19,7 +19,7 @@ toc: true
 	artist="RICK AND MORTY"
 	url="../music/1.mp3"
 	cover="https://y.qq.com/music/photo_new/T002R300x300M000000ZZmIF4I02cC_1.jpg"
-	fixed="true">
+    autoplay="true">
 	<!-- <pre hidden>
 		[00:00.00]This
 		[00:04.01]is
