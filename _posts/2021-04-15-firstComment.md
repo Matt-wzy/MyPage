@@ -22,11 +22,20 @@ theme: github-dark-orange
 # 这一段是我加的
 网页内网易云player使用教程：Powered by Aplayer
 
-<div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>
+
+<div>
+    <meting-js server="netease" type="playlist" id="666375" autoplay="false" list-max-height=1200px>
+    </meting-js>
+</div>
 
 文章中添加如下代码即可加入音乐：
 
-`<div class="aplayer" data-id="6713520209" data-server="netease" data-type="playlist" data-mode="random"></div>`
+``` 
+    <div>
+    <meting-js server="netease" type="playlist" id="666375" autoplay="false" list-max-height=1200px>
+    </meting-js>
+    </div>
+```
 
 （songid 30284674 ）
 
@@ -35,6 +44,18 @@ theme: github-dark-orange
 - type 后面可以填写 `song`, `playlist`, `album`, `search`, `artist`，分别是歌曲，歌单，专辑，搜索，歌手。这里我用的是歌单，所以 `type=”playlist”`。
 
 - id 是我们歌单的链接号码，这个数字我们可以登录网页版的网易云，打开一个歌单，从网址就能看出 id 是多少。
+
+server：指明是网易云音乐还是QQ音乐
+
+type：指明是歌单还是一首歌
+
+id：歌单的ID或者歌的ID
+
+autopaly：自动播放
+
+list-max-height：playlist的最大高度
+
+[更新网页](https://www.lefer.cn/posts/21467/)
 
 [这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "这个页面")告诉你怎么配置到文档内部
 
