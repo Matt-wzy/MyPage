@@ -13,20 +13,24 @@ toc: true
 
 <!-- more -->
 
-<div>
+本来还想在这里放点歌，结果呢？全要版权费……
+
+没有能力搞来商用授权，散了散了……
+
+<!-- <div>
     <meting-js
 	name="Don't Look Back"
 	artist="RICK AND MORTY"
 	url="../music/1.mp3"
 	cover="https://y.qq.com/music/photo_new/T002R300x300M000000ZZmIF4I02cC_1.jpg"
     autoplay="true">
-	<!-- <pre hidden>
+	<pre hidden>
 		[00:00.00]This
 		[00:04.01]is
 		[00:08.02]lyric
-	</pre> -->
+	</pre>
     </meting-js>
-</div>
+</div> -->
 
 # 起因
 
