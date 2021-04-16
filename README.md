@@ -1,7 +1,7 @@
 ## 请注意
 本repo为从原样板repo直接复制拿过来用的repo，本人对此pages的操作更多的关注于使用于内容而非技术和代码上，故很多地方必然有不到位之处，因本人时间不是无限的敬请谅解。
 
-##下面是原readme
+## 下面是原readme
 
 LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很烂）。
 
