@@ -46,3 +46,11 @@ toc: true
 ![](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c98b21f-9e7e-4bcb-9142-940554115122/6fa30b87-1c87-40cc-890a-86351e52ed12.png)
 上图这两个改成你路由器里面可读写的目录，可访问目录填写之前SMB挂载填上的共享文件夹。
 ~~然后你就可以愉快地打开KOD访问你的文件啦~~~
+实际上到现在你大有可能还是找不到去哪里找你的文件……
+打开KOD网页，配置好之后找到设置-储存/文件-储存管理，点新增
+
+![PnURpp.png](https://piccdn.freejishu.com/images/2021/04/16/PnURpp.png)
+名称、空间大小瞎填即可，储存目录选之前smb挂载的目录
+![PnUtar.png](https://piccdn.freejishu.com/images/2021/04/16/PnUtar.png)
+点击储存目录右面那个小按钮之后会弹出一个窗口，那个窗口就是你KOD网站运行所在的目录了，`/`代表路由器里面的根目录，要找到你挂载的那个文件夹其实就轻而易举了。
+![PnUz7a.png](https://piccdn.freejishu.com/images/2021/04/16/PnUz7a.png)
