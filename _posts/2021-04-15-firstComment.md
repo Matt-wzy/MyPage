@@ -39,6 +39,11 @@ theme: github-dark-orange
 
 （songid 30284674 ）
 
+```
+<meting-js
+	auto="https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html">
+</meting-js>
+```
 - server 后面的是我们要用的音乐平台，可以填写的有`netease`, `tencent`, `kugou`, `xiami`, `baidu` 。这里我用的是网易 `server=”netease”`
 
 - type 后面可以填写 `song`, `playlist`, `album`, `search`, `artist`，分别是歌曲，歌单，专辑，搜索，歌手。这里我用的是歌单，所以 `type=”playlist”`。
@@ -54,6 +59,8 @@ id：歌单的ID或者歌的ID
 autopaly：自动播放
 
 list-max-height：playlist的最大高度
+
+[meeting.js官网](https://github.com/metowolf/MetingJS)
 
 [更新网页](https://www.lefer.cn/posts/21467/)
 

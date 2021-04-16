@@ -14,9 +14,12 @@ toc: true
 <!-- more -->
 
 <div>
-    <meting-js server="netease" type="song" id="1451859310" autoplay="false" list-max-height=1200px>
+    <meting-js
+	auto="https://y.qq.com/n/ryqq/songDetail/0033Dx5n0GLL8z">
     </meting-js>
 </div>
+
+
 
 # 起因
 
