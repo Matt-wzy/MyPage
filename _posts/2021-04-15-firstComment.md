@@ -7,7 +7,6 @@ tags: [essay]
 comments: true
 toc: true
 pinned: true
-issue_term: test
 theme: github-dark-orange
 ---
 
