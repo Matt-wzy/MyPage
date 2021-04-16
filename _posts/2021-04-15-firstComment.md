@@ -11,6 +11,8 @@ pinned: true
 
 &nbsp;&nbsp;这应该是我配置好[loffer](https://github.com/FromEndWorld/LOFFER "loffer")之后的第一个博文，直接修改使用手册document作为我的第一篇博客了（哈哈哈哈）.
 
+<!-- more -->
+
 （疑惑性行为++）
 
 下面是原来的使用手册里面自带的内容。
