@@ -12,13 +12,11 @@ toc: true
 　　校园网作为一个大的局域网限制真**多，&！
 
 <!-- more -->
-<meting-js
-	server="netease"
-	type="netease"
-	id="1451859310">
-</meting-js>
-<div class="aplayer" data-id="1451859310" data-server="netease" data-type="song" data-mode="random"></div>
 
+<div>
+    <meting-js server="netease" type="song" id="1451859310" autoplay="false" list-max-height=1200px>
+    </meting-js>
+</div>
 # 起因
 
 　　同学要用某个软件安装包，我恰好有，他人距离我有点远，考虑到我们两个 ~~都人傻钱多~~ 都买了校园网，恰好两边都有网线，而又恰好同学那边又比较着急，就想着远程传一个大文件试试。
