@@ -12,7 +12,11 @@ toc: true
 　　校园网作为一个大的局域网限制真**多，&！
 
 <!-- more -->
-
+<meting-js
+	server="netease"
+	type="netease"
+	id="1451859310">
+</meting-js>
 <div class="aplayer" data-id="1451859310" data-server="netease" data-type="song" data-mode="random"></div>
 
 # 起因
