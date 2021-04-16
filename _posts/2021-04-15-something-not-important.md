@@ -15,7 +15,10 @@ toc: true
 
 　　整个人最近状态确实不怎么好，可能是跟比赛连续四天的熬夜有关，也有可能是跟学期初看到的60分上下的成绩有关，也有可能是……哎我放个歌自己体会吧。
 
-<div class="aplayer" data-id="30284674" data-server="netease" data-type="song" data-mode="random"></div>
+<div>
+    <meting-js server="netease" type="song" id="30284674" autoplay="false" list-max-height=1200px>
+    </meting-js>
+</div>
 
 # 为什么突然要建站
 
