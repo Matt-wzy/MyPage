@@ -13,10 +13,6 @@ toc: true
 
 <!-- more -->
 
-本来还想在这里放点歌，结果呢？全要版权费……
-
-没有能力搞来商用授权，散了散了……
-
 <!-- <div>
     <meting-js
 	name="Don't Look Back"
