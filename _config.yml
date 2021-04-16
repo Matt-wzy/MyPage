@@ -89,7 +89,7 @@ gitalk:
 #  owner: Matt-wzy
 #  proxy:
 # 输入Google Analytics web tracking code
-google_analytics: true
+google_analytics: G-JTQJZJTQH6
 
 utteranc:
   repo: Matt-wzy/MyPage # Your github repo path, also see: https://utteranc.es
