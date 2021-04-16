@@ -12,14 +12,20 @@ toc: true
 　　校园网作为一个大的局域网限制真**多，&！
 
 <!-- more -->
-
 <div>
     <meting-js
-	auto="https://y.qq.com/n/ryqq/songDetail/0033Dx5n0GLL8z">
+	name="Don't Look Back"
+	artist="RICK AND MORTY"
+	url="../_music/1.mp3"
+	cover="https://y.qq.com/music/photo_new/T002R300x300M000000ZZmIF4I02cC_1.jpg"
+	fixed="true">
+	<!-- <pre hidden>
+		[00:00.00]This
+		[00:04.01]is
+		[00:08.02]lyric
+	</pre> -->
     </meting-js>
 </div>
-
-
 
 # 起因
 
