@@ -24,7 +24,7 @@ theme: github-dark-orange
 
 
 <div>
-    <meting-js server="netease" type="playlist" id="666375" autoplay="false" list-max-height=1200px>
+    <meting-js server="netease" type="song" id="30284674" autoplay="false" list-max-height=1200px>
     </meting-js>
 </div>
 
