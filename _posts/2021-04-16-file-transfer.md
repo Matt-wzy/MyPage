@@ -6,7 +6,7 @@ author: Matt-wzy
 tags: [essay]
 comments: true
 toc: true
-theme: github-dark-orange
+#theme: github-dark-orange
 ---
 
 <div class="aplayer" data-id="1451859310" data-server="netease" data-type="song" data-mode="random"></div>
