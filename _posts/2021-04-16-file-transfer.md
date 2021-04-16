@@ -54,3 +54,6 @@ toc: true
 ![PnUtar.png](https://piccdn.freejishu.com/images/2021/04/16/PnUtar.png)
 点击储存目录右面那个小按钮之后会弹出一个窗口，那个窗口就是你KOD网站运行所在的目录了，`/`代表路由器里面的根目录，要找到你挂载的那个文件夹其实就轻而易举了。
 ![PnUz7a.png](https://piccdn.freejishu.com/images/2021/04/16/PnUz7a.png)
+
+如果不出意外的话，你现在就能在文件里面找到你刚刚挂载好的文件了
+![](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c98b21f-9e7e-4bcb-9142-940554115122/0c336c68-5af5-4501-b1ca-70faf4250e82.png)
