@@ -7,7 +7,8 @@ tags: [essay]
 comments: true
 toc: true
 pinned: true
-utteranc.issue_term: test
+issue_term: test
+theme: github-dark-orange
 ---
 
 　　这应该是我配置好[loffer](https://github.com/FromEndWorld/LOFFER "loffer")之后的第一个博文，直接修改使用手册document作为我的第一篇博客了（哈哈哈哈）.
