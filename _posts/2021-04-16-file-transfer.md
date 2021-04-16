@@ -32,6 +32,11 @@ toc: true
     </meting-js>
 </div> -->
 
+<div>
+    <meting-js server="netease" type="song" id="536623501" autoplay="true" list-max-height=1200px>
+    </meting-js>
+</div>
+
 # 起因
 
 　　同学要用某个软件安装包，我恰好有，他人距离我有点远，考虑到我们两个 ~~都人傻钱多~~ 都买了校园网，恰好两边都有网线，而又恰好同学那边又比较着急，就想着远程传一个大文件试试。
