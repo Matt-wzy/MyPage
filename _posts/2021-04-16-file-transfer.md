@@ -9,9 +9,11 @@ toc: true
 #theme: github-dark-orange
 ---
 
-<div class="aplayer" data-id="1451859310" data-server="netease" data-type="song" data-mode="random"></div>
+　　校园网作为一个大的局域网限制真**多，&！
 
 <!-- more -->
+
+<div class="aplayer" data-id="1451859310" data-server="netease" data-type="song" data-mode="random"></div>
 
 # 起因
 
