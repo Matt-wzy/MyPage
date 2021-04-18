@@ -131,6 +131,8 @@ toc: true
 
 #### 　　增加Aplayer
 
+　　使用说明[在这](https://matt-wzy.github.io/MyPage/firstComment/#这一段是我加的) ，而如何将其添加到网站里面回头再讲，本质是加js
+
 #### 　　增加一言
 
 　　[一言](https://developer.hitokoto.cn/sentence/demo/#网页)
