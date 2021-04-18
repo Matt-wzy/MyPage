@@ -51,6 +51,26 @@ toc: true
 
 ## 增删内容，更改框架
 
+### 基本
+
+#### 更改_config.ymal文件
+
+#### 添加博文、编辑内容
+
+### 进阶
+
+#### 增加google analytics
+
+#### 增加Aplayer
+
+#### 增加一言
+
+
+
+
+
+
+
 Still building ... 
 
 [<img src="{{ site.baseurl }}/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{: .center-image}]({{ site.baseurl }}/)
