@@ -48,6 +48,7 @@
   <!-- require MetingJS -->
   <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  <!-- toko -->
   <script>
     fetch('https://v1.hitokoto.cn')
       .then(response => response.json())
@@ -60,5 +61,6 @@
         hitokoto2.innerText = data.hitokoto
       })
       .catch(console.error)
+
   </script>
 </head>
