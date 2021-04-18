@@ -51,19 +51,21 @@ toc: true
 
 ## 增删内容，更改框架
 
-### 基本
+### 　基本
 
-#### 更改_config.ymal文件
+#### 　　更改_config.ymal文件
 
-#### 添加博文、编辑内容
 
-### 进阶
 
-#### 增加google analytics
+#### 　　添加博文、编辑内容
 
-#### 增加Aplayer
+### 　进阶
 
-#### 增加一言
+#### 　　增加google analytics
+
+#### 　　增加Aplayer
+
+#### 　　增加一言
 
 
 
