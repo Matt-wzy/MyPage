@@ -17,6 +17,8 @@ toc: true
     <meting-js server="netease" type="song" id="492390949" autoplay="false" list-max-height=1200px>
     </meting-js>
 </div>
+你在我站最底下看到的那个GitHub图标[![PnUyJ3.th.png](https://piccdn.freejishu.com/images/2021/04/18/PnUyJ3.th.png)](https://pic.freejishu.com/image/PnUyJ3)，点进去，就能看到本站的全部代码和博文。[![PnUD1H.png](https://piccdn.freejishu.com/images/2021/04/18/PnUD1H.png)](https://pic.freejishu.com/image/PnUD1H) (啊好羞耻祝贺那个单词竟然拼错了谁能告诉我怎么改commit的标注么)
+
 
 
 
