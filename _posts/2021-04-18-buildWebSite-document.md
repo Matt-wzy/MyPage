@@ -39,7 +39,13 @@ toc: true
 
 ### 　上传，配置
 
-　　
+　　对你新建的空仓库 `git clone` , 把下下来的zip解压， 更改一点点内容 , `git push` ，git设置啥的我就不教了，有需要issue私聊。
+
+（上面那个也可以直接用克隆样板库的方式完成，随意就好）
+
+　　打开GitHub pages的方法也比较简单，settings-pages-打个勾勾就好啦~
+
+[![PnUQ1b.png](https://piccdn.freejishu.com/images/2021/04/18/PnUQ1b.png)](https://pic.freejishu.com/image/PnUQ1b)
 
 
 
