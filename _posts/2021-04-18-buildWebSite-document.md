@@ -53,7 +53,9 @@ toc: true
 
 ### 　基本
 
-#### 　　更改_config.ymal文件
+　　谁不想啥都不动然后立刻开箱使用~~
+
+#### 　　更改 _config.yml 文件
 
 　　这个是建站必改的配置文件了，这个文件里面包含了有关网页正常运转的很多配置，你看代码便会明白它是怎么运作的，不过就目前而言，我们只需要知道这个文件需要被改动而且我们有详细的改动说明已经写在文件里面的注释里了。
 
@@ -63,7 +65,7 @@ toc: true
 
 　　再有就是repo的名字，照着说明改成你仓库的名字的就行[![PnU3fy.png](https://piccdn.freejishu.com/images/2021/04/18/PnU3fy.png)](https://pic.freejishu.com/image/PnU3fy)
 
- 　　至此 _config.yal 已经基本改完，起码你的网站刷新完后应该看起来正常（指和模板一摸一样）。
+ 　　至此 _config.yml 已经基本改完，起码你的网站刷新完后应该看起来正常（指和模板一摸一样）。
 
 　　如果想要自定义404页面工作正常的话，记得在404.md顶上改一下改成这个样子[![PnU6m8.png](https://piccdn.freejishu.com/images/2021/04/18/PnU6m8.png)](https://pic.freejishu.com/image/PnU6m8)
 
@@ -76,6 +78,8 @@ title: 404 - Page not found
 ```
 
 　　至此，基础的配置已经结束了，你还可以在此配置文件里面更改您的页脚注等等，根据个人喜爱自行发挥即可。
+
+　　看到这里，你自然会担心如果自己配置的时候改错了会怎么样：不用担心，如果你配置的时候产生了严重的语法错误（比如说该加的空格忘了加），GitHub的Jekyll工具会报错，然后给你发一封邮件说明你的repo对应的网页构建失败，这时候你简单看一看是不是哪里的空格一不小心给删了，补上去重新提交就可。
 
 #### 　　添加博文、编辑内容
 
@@ -103,13 +107,31 @@ toc: true
 
 ### 　进阶
 
+　　如果你不止满足于开箱即用，那么你可以对模板进行一定的修改。
+
 #### 　　增加google analytics
+
+　　此网站的模板自带google analytics支持，但是不知道怎么的，我怎么配置都不生效，于是被迫自己改了改。
+
+　　首先，你需要一个**账号，然后……算了快进到你拿到G代码
+
+[![PnUOeO.png](https://piccdn.freejishu.com/images/2021/04/18/PnUOeO.png)](https://pic.freejishu.com/image/PnUOeO)
+
+　　然后下面有代码添加说明，按照说明加到head里面即可。
+
+　　什么？你不知道怎么加进去？~~啊哈那是因为我没说~~ 这个网页的布局不是说一个html就是一个页面的，而是一层套一层，层层嵌套，具体我不是有关专业从业人员也说不明白为什么，但是你只要知道在代码里看到如下的内容就说明这个页面引用了另一个页面内的全部代码。[![PnUSK0.png](https://piccdn.freejishu.com/images/2021/04/18/PnUSK0.png)](https://pic.freejishu.com/image/PnUSK0) 这里说的是用了head.html里面的全部代码。
+
+　　现在你就知道了，你只需要找到head.html里面对应的地方加入谷歌给你的分析代码即可。
+
+　　找到/_include/analytics.html，删掉原有的部分，然后加入谷歌给你的那一块代码，然后再去head.html里面把插入代码的语句适当往前提，比如说我的就改成了这样[![PnUvzY.png](https://piccdn.freejishu.com/images/2021/04/18/PnUvzY.png)](https://pic.freejishu.com/image/PnUvzY)
+
+　　然后你守着谷歌的实时分析数据就可以啦~记得提交完之后等一两分钟多刷新刷新你的网页。
 
 #### 　　增加Aplayer
 
 #### 　　增加一言
 
-
+　　[一言](https://developer.hitokoto.cn/sentence/demo/#网页)
 
 
 
