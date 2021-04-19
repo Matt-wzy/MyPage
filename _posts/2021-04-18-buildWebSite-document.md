@@ -175,8 +175,7 @@ toc: true
 
 
 
-
-## Option
+- Option
 
 |option               |default      |description|
 |:--------------------|:------------:|:----------|
