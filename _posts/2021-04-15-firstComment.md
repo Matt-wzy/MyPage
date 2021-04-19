@@ -15,6 +15,8 @@ theme: github-dark-orange
 
 <!-- more -->
 
+　　本站的搭建教程[在这](https://matt-wzy.github.io/MyPage/buildWebSite-document/) 
+
 （疑惑性行为++）
 
 下面是原来的使用手册里面自带的内容。
