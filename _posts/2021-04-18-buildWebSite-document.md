@@ -17,7 +17,9 @@ toc: true
 
 bilibili：（审核中）
 
-知呼：（审核中）
+知呼：https://zhuanlan.zhihu.com/p/365978666
+
+CSDN：https://blog.csdn.net/admintestfor/article/details/115861497
 
 此处未声明的平台即为非授权转载，本站保留一切权利。
 
