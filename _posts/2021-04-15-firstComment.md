@@ -10,7 +10,8 @@ pinned: true
 theme: github-dark-orange
 ---
 
-　　这应该是我配置好[loffer](https://github.com/FromEndWorld/LOFFER "loffer")之后的第一个博文，直接修改使用手册document作为我的第一篇博客了（哈哈哈哈）.
+
+　　这应该是我配置好 [loffer](https://github.com/FromEndWorld/LOFFER "out:loffer") 之后的第一个博文，直接修改使用手册document作为我的第一篇博客了（哈哈哈哈）.
 
 <!-- more -->
 
@@ -60,11 +61,11 @@ autopaly：自动播放
 
 list-max-height：playlist的最大高度
 
-[meeting.js官网](https://github.com/metowolf/MetingJS)
+[meeting.js官网](https://github.com/metowolf/MetingJS "out")
 
-[更新网页](https://www.lefer.cn/posts/21467/)
+[更新网页](https://www.lefer.cn/posts/21467/ "out")
 
-[这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "这个页面")告诉你怎么配置到文档内部
+[这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "out这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "out这个页面")告诉你怎么配置到文档内部
 
 ------------
 # 这一段是原文档有的内容

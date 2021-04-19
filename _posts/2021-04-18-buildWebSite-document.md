@@ -29,15 +29,15 @@ toc: true
 
 　　此类创建GitHub账户、新建一个repo的教程数不胜数，不想赘述。
 
-　　[以防你真的不会](https://sspai.com/post/54608)，这个链接点进去之后看到 `找到 GitHub Pages 选项`即可
+　　[以防你真的不会](https://sspai.com/post/54608 "out")，这个链接点进去之后看到 `找到 GitHub Pages 选项`即可
 
 ###   寻找合适的模板
 
 > 　　不会吧？不会有人搭建博客之前就已经会写而且写好一个完完整整的静态网站框架了吧？
 
-　　实际上大部分人都没有自己的一套网站模板，如果有请跳过寻找模板直接上传。这里随便给个[模板网站](http://jekyllthemes.org/themes) ，找到一个你喜欢的之后下载或者去其主页看看~~或许有使用说明~~。
+　　实际上大部分人都没有自己的一套网站模板，如果有请跳过寻找模板直接上传。这里随便给个[模板网站](http://jekyllthemes.org/themes "out") ，找到一个你喜欢的之后下载或者去其主页看看~~或许有使用说明~~。
 
-　　本站用的是[此模板](https://github.com/FromEndWorld/LOFFER) ，这个模板有个好处就是全中文说明，及其友好，简单看看readme和里面的链接基本上就啥都会配置了。~~（不会你issue找我，我教）~~
+　　本站用的是[此模板](https://github.com/FromEndWorld/LOFFER "out") ，这个模板有个好处就是全中文说明，及其友好，简单看看readme和里面的链接基本上就啥都会配置了。~~（不会你issue找我，我教）~~
 
 ###   上传，配置
 
@@ -85,7 +85,7 @@ title: 404 - Page not found
 
 ####  添加博文、编辑内容
 
-　　其实readme里面指向的链接中已经[说的很清楚了](https://fromendworld.github.io/LOFFER/document/#第三步-发布博文) ，以防你还是看不明白我来给你说一下。
+　　其实readme里面指向的链接中已经[说的很清楚了](https://fromendworld.github.io/LOFFER/document/#第三步-发布博文 "out") ，以防你还是看不明白我来给你说一下。
 
 　　[![PnUFpB.png](https://piccdn.freejishu.com/images/2021/04/18/PnUFpB.png)](https://pic.freejishu.com/image/PnUFpB)
 
@@ -109,7 +109,7 @@ toc: true
 
 ##### 图床
 
-　　你会发现使用md文件编写博客的时候无法像编写word文档一样直接粘贴如图片，如果在typora这样的编辑器里面直接粘贴会出现文件名+本地文件地址，这样子的话别人是绝对无法看到你想展示的图片的，一个合适的解决办法就是将图片上传的图床并使用图床地址。而现在互联网上图床有特别多，我个人对于那些要求图片大小小于0.5M的主流图床并不感兴趣，相反的，我选择[freejishu搭建的图床](https://pic.freejishu.com/) 他本人用爱发电搭建起了一个图床系统，虽然不知道能用多久，但是用一天爽一天哈哈哈（（（（谁叫他的图床没有使用限制哈哈哈当然我也不会传什么不符合主流价值观的图片上去的。
+　　你会发现使用md文件编写博客的时候无法像编写word文档一样直接粘贴如图片，如果在typora这样的编辑器里面直接粘贴会出现文件名+本地文件地址，这样子的话别人是绝对无法看到你想展示的图片的，一个合适的解决办法就是将图片上传的图床并使用图床地址。而现在互联网上图床有特别多，我个人对于那些要求图片大小小于0.5M的主流图床并不感兴趣，相反的，我选择[freejishu搭建的图床](https://pic.freejishu.com/ "out") 他本人用爱发电搭建起了一个图床系统，虽然不知道能用多久，但是用一天爽一天哈哈哈（（（（谁叫他的图床没有使用限制哈哈哈当然我也不会传什么不符合主流价值观的图片上去的。
 
 ###   进阶
 
@@ -143,7 +143,7 @@ toc: true
     <meting-js server="netease" type="song" id="569212210" autoplay="false" list-max-height=1200px>
     </meting-js>
 </div>
-　　将这样[棒棒的播放器](https://github.com/metowolf/MetingJS)加入你的网页只需要分为三步：
+　　将这样[棒棒的播放器](https://github.com/metowolf/MetingJS "out")加入你的网页只需要分为三步：
 
 - 第一步：head加入对应代码
 
@@ -198,11 +198,11 @@ toc: true
 |list-max-height   |`340px`       |list max height|
 |storage-name     |`metingjs`    |localStorage key that store player setting|
 
-Documentation for APlayer can be found at https://aplayer.js.org/#/home?id=options
+Documentation for APlayer can be found at <https://aplayer.js.org/#/home?id=options>
 
 ####    增加一言
 
-　　[一言](https://developer.hitokoto.cn/sentence/demo/#网页)
+　　[一言](https://developer.hitokoto.cn/sentence/demo/#网页 "out")
 
 　　作为一个完善的网页怎能没有美丽的修饰？一言可以说是被很多网站所采用的所增加他们网站美观度的一个小工具，没有很复杂，就网上选取的一句话，或调皮，或惊喜，或感触，总之，你会期待每次刷新所呈现出来的新鲜句子，你会觉得他们永远不会重复，并且时刻充满新鲜于惊喜。
 
