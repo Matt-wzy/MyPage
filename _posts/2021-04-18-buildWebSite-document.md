@@ -107,6 +107,10 @@ toc: true
 
 　　其中，`layout: post` 不用改，`toc: true` 是指打开目录显示（桌面版浏览器生效），剩下的自己猜猜就猜出来了。~~主要是懒不想一个个找然后发出来~~
 
+##### 图床
+
+　　你会发现使用md文件编写博客的时候无法像编写word文档一样直接粘贴如图片，如果在typora这样的编辑器里面直接粘贴会出现文件名+本地文件地址，这样子的话别人是绝对无法看到你想展示的图片的，一个合适的解决办法就是将图片上传的图床并使用图床地址。而现在互联网上图床有特别多，我个人对于那些要求图片大小小于0.5M的主流图床并不感兴趣，相反的，我选择[freejishu搭建的图床](https://pic.freejishu.com/) 他本人用爱发电搭建起了一个图床系统，虽然不知道能用多久，但是用一天爽一天哈哈哈（（（（谁叫他的图床没有使用限制哈哈哈当然我也不会传什么不符合主流价值观的图片上去的。
+
 ###   进阶
 
 　　如果你不止满足于开箱即用，那么你可以对模板进行一定的修改。
@@ -133,14 +137,121 @@ toc: true
 
 　　使用说明[在这](https://matt-wzy.github.io/MyPage/firstComment/#这一段是我加的) ，而如何将其添加到网站里面回头再讲，本质是加js
 
+　　一个合格的博客文章，怎能没有BGM的加持呢？对于加BGM，其实很早以前就有大神提出了解决方案，Aplayer做音乐播放器，mettingjs做网络音乐id解析器，两者结合即可达到输入音乐id即出音乐的作用，如下所示：
+
+<div>
+    <meting-js server="netease" type="song" id="569212210" autoplay="false" list-max-height=1200px>
+    </meting-js>
+</div>
+　　将这样[棒棒的播放器](https://github.com/metowolf/MetingJS)加入你的网页只需要分为三步：
+
+- 第一步：head加入对应代码
+
+  ```html
+  <!-- require APlayer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  <!-- require MetingJS -->
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  ```
+
+  
+
+- 第二部：文章内容（在 * - * - * .md文件中）直接写html代码
+
+  ```
+  <div>
+      <meting-js
+          server="netease"
+          type="playlist"
+          id="60198">
+      </meting-js>
+  </div>
+  ```
+
+  
+
+- 第三步：提交并聆听~
+
+
+
+
+## Option
+
+|option               |default      |description|
+|:--------------------|:------------:|:----------|
+|id              |**require**   |song id / playlist id / album id / search keyword|
+|server          |**require**   |music platform: `netease`, `tencent`, `kugou`, `xiami`, `baidu`|
+|type            |**require**   |`song`, `playlist`, `album`, `search`, `artist`|
+|auto            |options       |music link, support: `netease`, `tencent`, `xiami`|
+|fixed           |`false`       |enable fixed mode|
+|mini            |`false`       |enable mini mode|
+|autoplay        |`false`       |audio autoplay|
+|theme           |`#2980b9`     |main color|
+|loop            |`all`         |player loop play, values: 'all', 'one', 'none'|
+|order           |`list`        |player play order, values: 'list', 'random'|
+|preload         |`auto`        |values: 'none', 'metadata', 'auto'|
+|volume          |`0.7`         |default volume, notice that player will remember user setting, default volume will not work after user set volume themselves|
+|mutex           |`true`        |prevent to play multiple player at the same time, pause other players when this player start play|
+|lrc-type         |`0`           |lyric type|
+|list-folded      |`false`       |indicate whether list should folded at first|
+|list-max-height   |`340px`       |list max height|
+|storage-name     |`metingjs`    |localStorage key that store player setting|
+
+Documentation for APlayer can be found at https://aplayer.js.org/#/home?id=options
+
 ####    增加一言
 
 　　[一言](https://developer.hitokoto.cn/sentence/demo/#网页)
 
+　　作为一个完善的网页怎能没有美丽的修饰？一言可以说是被很多网站所采用的所增加他们网站美观度的一个小工具，没有很复杂，就网上选取的一句话，或调皮，或惊喜，或感触，总之，你会期待每次刷新所呈现出来的新鲜句子，你会觉得他们永远不会重复，并且时刻充满新鲜于惊喜。
 
+　　虽然一言api提供了选择范围的接口，~~但是我懒~~但是我觉得没有必要筛选，随意刷新出来自己所没能在日常生活中看到的句子，难道不是一件值得庆祝的事情么？
 
+　　具体的构建方法也很简单，将此代码放入head中
 
+```html
+  <!-- toko -->
+  <script>
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        const hitokoto = document.getElementById('hitokoto')
+        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto.innerText = data.hitokoto
+      })
+      .catch(console.error)
 
-Still building&updating ... 
+  </script>
+```
+
+　　然后将此段代码插入合适的位置（如页脚）
+
+```html
+      <!-- toko -->
+      <p id="hitokoto">:D 获取中...</p>
+```
+
+　　实际实战中发现如果网页会动态调整其layout的话，用一个p标签可能会导致总是有一个显示方式一直显示获取中，解决办法就是在不同的排版方式中都加入p标签并改id，然后头文件改成这样：
+
+```html
+  <!-- toko -->
+  <script>
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        const hitokoto = document.getElementById('hitokoto')
+        const hitokoto2 = document.getElementById('hitokoto2')
+        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto.innerText = data.hitokoto
+        hitokoto2.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto2.innerText = data.hitokoto
+      })
+      .catch(console.error)
+
+  </script>
+```
+
+This page is still building&updating ... 
 
 [<img src="{{ site.baseurl }}/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{: .center-image}]({{ site.baseurl }}/)
