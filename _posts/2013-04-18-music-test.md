@@ -19,6 +19,7 @@ toc: false
 </div>
 
 <div>
-<meting-js server="netease" type="song" id="25704014" autoplay="false" list-max-height=1200px>
+<meting-js
+	auto="https://y.qq.com/n/yqq/song/000gegrH19bl5D.html?ADTAG=h5_playsong&no_redirect=1">
 </meting-js>
 </div>
