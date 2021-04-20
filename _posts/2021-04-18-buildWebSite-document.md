@@ -15,7 +15,7 @@ toc: true
 
 本文亦登至其他平台：
 
-bilibili：（审核中）
+bilibili：https://www.bilibili.com/read/cv10931816
 
 知呼：https://zhuanlan.zhihu.com/p/365978666
 
