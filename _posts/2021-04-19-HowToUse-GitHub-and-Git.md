@@ -37,7 +37,7 @@ toc: true
 
 #### 安装
 
-　　Git本质就是一个软件，而使用软件的第0步是安装软件，[git的下载链接](https://git-scm.com/download/win "out") ,如果下载速度缓慢，可以试试[这个链接](https://474b.com/f/19128606-490774539-30c811 "out") （为什么用诚通？~~别问，问就是和百度云过不去~~）
+　　Git本质就是一个软件，而使用软件的第0步是安装软件，[git的下载链接](https://git-scm.com/download/win "out") ,如果下载速度缓慢，可以试试[这个链接](https://474b.com/f/19128606-490774539-30c811 "out") （为什么用诚通？~~别问，问就是和百度云过不去~~）（密码admin）
 
 　　如果没有截图提示的话就一路下一步![PnUbSQ.png](https://piccdn.freejishu.com/images/2021/04/20/PnUbSQ.png) 这里选择你需要用git的代码编辑工具，默认是nano或者vim，但是如果你装了VSCode而且比较喜欢用它，那么你就可以像我一样换成VSCode。剩下的部分一路下一步或者按照自己的喜好来选就可以。
 
