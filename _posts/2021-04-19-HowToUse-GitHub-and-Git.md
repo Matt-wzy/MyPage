@@ -12,6 +12,7 @@ toc: true
 <!-- DocNo1 -->
 
 <div>
+这里是音乐播放器，正在加载……
     <meting-js server="netease" type="playlist" id="6720015398" autoplay="false" list-max-height=1200px>
     </meting-js>
 </div>
