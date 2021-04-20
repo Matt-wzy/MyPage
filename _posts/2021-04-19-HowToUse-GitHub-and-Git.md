@@ -34,11 +34,16 @@ toc: true
 
 ### Git使用
 
+#### 安装
+
 　　Git本质就是一个软件，而使用软件的第0步是安装软件，[git的下载链接](https://git-scm.com/download/win "out") ,如果下载速度缓慢，可以试试[这个链接](https://474b.com/f/19128606-490774539-30c811 "out") （为什么用诚通？~~别问，问就是和百度云过不去~~）
 
 　　如果没有截图提示的话就一路下一步![PnUbSQ.png](https://piccdn.freejishu.com/images/2021/04/20/PnUbSQ.png) 这里选择你需要用git的代码编辑工具，默认是nano或者vim，但是如果你装了VSCode而且比较喜欢用它，那么你就可以像我一样换成VSCode。剩下的部分一路下一步或者按照自己的喜好来选就可以。
 
 　　![PnUkfK.png](https://piccdn.freejishu.com/images/2021/04/20/PnUkfK.png) 随意找一个有文件的地方右键能看到Git Bash Here就说明你已经安装好git了，之后提到`运行git代码`默认说的就是找到对应文件夹右键选择Git Bash Here。
+
+#### 初始化
+
 　　先随便找一个地方打开git bash，运行如下代码，`Your Name`部分改成你的网名或者今后使用Git、GitHub的昵称，`email@example.com`部分写成你的邮箱。（注：$是系统自动生成的命令提示符，别复制）
 
 ```
@@ -52,10 +57,74 @@ $ git config --global user.email "email@example.com"
 
 　　好了，现在电脑里就已经有一个Git工具了，快来新建一个文件夹试试吧！
 
+#### 建立本地仓库
+
 > 注意，剩下的部分借用廖雪峰的教程并对其有大幅度的精简，如果看完觉得还想深入了解请自行搜索git使用教程或者访问廖雪峰的git教程网站 <https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304> 
 
+！ 请注意，为了尽可能地减少错误，我们下面的操作均应避免使用中文名和在C盘内部操作。
 
+　　随便找一个目录新建文件夹并随便起一个**英文名** ，比如我在E盘建立了一个新的文件夹`E:\GitTest`作为本次训练使用git命令的目录在此处Git Bash，轻敲
+
+```
+git init
+```
+
+　　你现在就成功地建立起了一个git仓库（它目前仅存在于你的本地电脑上）![PnUa2z.png](https://piccdn.freejishu.com/images/2021/04/20/PnUa2z.png) 现在我们就可以开始尝试使用git工具所涉及到的命令了。
+
+#### 将文件放入仓库
+
+　　现在我们编写一个`readme.txt`文件，内容如下：
+
+```
+Git is a version control system.
+Git is free software.
+```
+
+　　一定要放到`learngit`目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。
+
+　　把一个文件放到Git仓库只需要两步。
+
+- 第一步，用命令`git add`告诉Git，把文件添加到仓库：
+
+```
+$ git add readme.txt
+```
+
+　　执行上面的命令，没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功。
+
+- 第二步，用命令`git commit`告诉Git，把文件提交到仓库：
+
+```
+$ git commit -m "wrote a readme file"
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+```
+
+　　简单解释一下`git commit`命令，`-m`后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，比方说我们在这里新建了readme文件，commit内容就说写了一个readme文件，清晰明了,这样你就能从历史记录里方便地找到改动记录。
+
+　　嫌麻烦不想输入`-m "xxx"`行不行？确实有办法可以这么干，但是强烈不建议你这么干，因为输入说明对自己对别人阅读都很重要。实在不想输入说明的童鞋请自行Google，我不告诉你这个参数。
+
+`git commit`命令执行成功后会告诉你，`1 file changed`：1个文件被改动（我们新添加的readme.txt文件）；`2 insertions`：插入了两行内容（readme.txt有两行内容）。
+
+#### 小结
+
+　　以后常用的命令：
+
+　　初始化一个Git仓库，使用`git init`命令。
+
+　　添加文件到Git仓库，分两步：
+
+1. 使用命令`git add <file>`，注意，可反复多次使用，添加多个文件；
+2. 使用命令`git commit -m <message>`，完成。
+
+　　当然，借助VSCode等工具之后，你或许点几下鼠标即可达成同样的效果，但是那些都是在你了解git命令含义的基础上的进阶操作，而且很多地方没法安装或者很难安装VSCode这样的工具（比方说网络差的情况下），所以起码你要会检索着使用git工具的命令行形态。
+
+-----------
 
 
 
 　　到现在为止，你已经可以使用git的基本功能做到版本控制了，但是目前你还不能使用git和GitHub联动，也不能将代码上传到GitHub上看完下面的部分你就知道如何使用git和GitHub联动以及使用git命令上传、下载代码。
+
+### Hello, GitHub
+
