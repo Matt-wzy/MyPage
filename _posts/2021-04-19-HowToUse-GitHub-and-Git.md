@@ -128,3 +128,8 @@ $ git commit -m "wrote a readme file"
 
 ### Hello, GitHub
 
+[Github](https://github.com/ "out") ，代码托管网站。
+
+如果你还没有注册账号的话，其实不急，就算没有账户你仍然可以查看一些开源库的代码。
+
+<https://github.com/Matt-wzy/R-M_Robot> （我们的视觉项目~~因为不想调设置，被迫~~开源）
