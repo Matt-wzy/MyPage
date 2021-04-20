@@ -45,7 +45,7 @@ toc: true
 
 #### 初始化
 
-　　先随便找一个地方打开git bash，运行如下代码，`Your Name`部分改成你的网名或者今后使用Git、GitHub的昵称，`email@example.com`部分写成你的邮箱。（注：$是系统自动生成的命令提示符，别复制）
+　　先随便找一个地方打开git bash，运行如下代码，`Your Name`部分改成你的网名或者今后使用Git、GitHub的昵称，`email@example.com`部分写成你的邮箱(建议与github、gitee注册时使用邮箱相同)。（注：$是系统自动生成的命令提示符，别复制）
 
 ```
 $ git config --global user.name "Your Name"
