@@ -39,4 +39,23 @@ toc: true
 　　如果没有截图提示的话就一路下一步![PnUbSQ.png](https://piccdn.freejishu.com/images/2021/04/20/PnUbSQ.png) 这里选择你需要用git的代码编辑工具，默认是nano或者vim，但是如果你装了VSCode而且比较喜欢用它，那么你就可以像我一样换成VSCode。剩下的部分一路下一步或者按照自己的喜好来选就可以。
 
 　　![PnUkfK.png](https://piccdn.freejishu.com/images/2021/04/20/PnUkfK.png) 随意找一个有文件的地方右键能看到Git Bash Here就说明你已经安装好git了，之后提到`运行git代码`默认说的就是找到对应文件夹右键选择Git Bash Here。
+　　先随便找一个地方打开git bash，运行如下代码，`Your Name`部分改成你的网名或者今后使用Git、GitHub的昵称，`email@example.com`部分写成你的邮箱。（注：$是系统自动生成的命令提示符，别复制）
 
+```
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+```
+
+比方说我的话就应该这样配置：
+
+![PnU4m4.png](https://piccdn.freejishu.com/images/2021/04/20/PnU4m4.png)
+
+　　好了，现在电脑里就已经有一个Git工具了，快来新建一个文件夹试试吧！
+
+> 注意，剩下的部分借用廖雪峰的教程并对其有大幅度的精简，如果看完觉得还想深入了解请自行搜索git使用教程或者访问廖雪峰的git教程网站 <https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304> 
+
+
+
+
+
+　　到现在为止，你已经可以使用git的基本功能做到版本控制了，但是目前你还不能使用git和GitHub联动，也不能将代码上传到GitHub上看完下面的部分你就知道如何使用git和GitHub联动以及使用git命令上传、下载代码。
