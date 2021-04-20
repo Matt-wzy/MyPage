@@ -133,3 +133,27 @@ $ git commit -m "wrote a readme file"
 如果你还没有注册账号的话，其实不急，就算没有账户你仍然可以查看一些开源库的代码。
 
 <https://github.com/Matt-wzy/R-M_Robot> （我们的视觉项目~~因为不想调设置，被迫~~开源）
+
+![PnUeeU.png](https://piccdn.freejishu.com/images/2021/04/20/PnUeeU.png)
+
+　　以前我们用到的时候都会点击download zip，以后则会更多地使用`git@github.com:Matt-wzy/R-M_Robot.git`。
+
+　　好了，为了练习git命令和GitHub在线仓库的联动，你起码要有一个GitHub账户了。
+
+#### 注册GitHub账户
+
+　　~~什么？这还要我教？~~ 我随便搜了一下，看到[一个结果](https://cloud.tencent.com/developer/article/1487508 "out")，我也没仔细看，反正你能注册了就行
+
+#### 搞一个仓库
+
+　　你看到外面的GitHub教程大多都是从零创建一个仓库，但其实没有必要，除非你们要从零开始重写整个视觉代码，否则从拿过我们的仓库开始就行~~（实际上是懒得又截图又打字写教程了）~~
+
+　　具体方法如下：
+
+　　为了练习`推送` `修改`命令,首先你需要有仓库的使用权限，这需要建立仓库的管理员设置，在此之前，你可以fork本项目，这样整个仓库的一个备份都到了你的账号底下![PnUhKI.png](https://piccdn.freejishu.com/images/2021/04/20/PnUhKI.png) 然后选好一个文件夹 **不要用中文目录** 下载（Git Bash命令）
+
+```
+git clone git@github.com:你的GitHub用户名/R-M_Robot.git
+```
+
+wala~ 你现在已经拿到了和我们视觉组3月27号一模一样的整个项目代码，如果你想可以大致阅览一下，不过我们此篇教程重点在于使用git&GitHub，所以暂不介绍目录结构和代码功能。
