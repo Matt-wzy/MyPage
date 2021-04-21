@@ -171,12 +171,6 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 
 　　简单一改readme，加个空格啥的（这就类似于我们以后改了什么代码），然后`git add .`  、`git commit -m "Test edit"`[![PnUVJc.png](https://piccdn.freejishu.com/images/2021/04/21/PnUVJc.png)](https://pic.freejishu.com/image/PnUVJc) 然后再`git push`![PnUY5g.png](https://piccdn.freejishu.com/images/2021/04/21/PnUY5g.png) ,现在你再上GitHub中你的仓库那里看一下，是不是已经有一次提交记录以及文件变更了呢？
 
-　　如果你在多个设备上都clone了同一个人的同一个仓库，在一台设备上变更完提交之后，在另一台设备编辑文件之前记得先 `git pull` 这一行代码表示从远程拉取代码。如果你的本地仓库和远端仓库版本一致的话，你会看到这样的提示：[![PnUj9T.png](https://piccdn.freejishu.com/images/2021/04/21/PnUj9T.png)](https://pic.freejishu.com/image/PnUj9T) 
+　　如果你在多个设备上都clone了同一个人的同一个仓库，在一台设备上变更完提交之后，在另一台设备编辑文件之前记得先 `git pull` 这一行代码表示从远程拉取代码。如果你的本地仓库和远端仓库版本一致的话，你会看到这样的提示：[![PnUj9T.png](https://piccdn.freejishu.com/images/2021/04/21/PnUj9T.png)](https://pic.freejishu.com/image/PnUj9T) 这说明你的仓库（已经commit的部分）已经是最新的，不需要操作。
 
-
-
-This page is still building&updating ... 
-
-[<img src="{{ site.baseurl }}/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{: .center-image}]({{ site.baseurl }}/)
-
-　　好了，有关git和GitHub的入门教程先到这了，我以后还会再写个文档专门讲述git命令与GitHub中名词的理解，若想在此之前自学git&GitHub用法请点击上文提到的廖雪峰的网站以及自行Google
+　　至此，最基本的git&GitHub操作已经展示完毕，将来会有一个教程专门列举命令和其简要介绍。如有问题请在下方评论区留言或在群中交流。若想在下篇文章写出之前自学git&GitHub用法请点击上文提到的[廖雪峰的网站](https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304 "out")以及自行Google
