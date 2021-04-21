@@ -173,4 +173,5 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 
 　　如果你在多个设备上都clone了同一个人的同一个仓库，在一台设备上变更完提交之后，在另一台设备编辑文件之前记得先 `git pull` 这一行代码表示从远程拉取代码。如果你的本地仓库和远端仓库版本一致的话，你会看到这样的提示：[![PnUj9T.png](https://piccdn.freejishu.com/images/2021/04/21/PnUj9T.png)](https://pic.freejishu.com/image/PnUj9T) 这说明你的仓库（已经commit的部分）已经是最新的，不需要操作。
 
-　　至此，最基本的git&GitHub操作已经展示完毕，将来会有一个教程专门列举命令和其简要介绍。如有问题请在下方评论区留言或在群中交流。若想在下篇文章写出之前自学git&GitHub用法请点击上文提到的[廖雪峰的网站](https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304 "out")以及自行Google
+　　至此，最基本的git&GitHub操作已经展示完毕，将来会有一个教程专门列举命令和其简要介绍。如有问题请在下方评论区留言或在群中交流。若想在下篇文章写出之前自学git&GitHub用法请点击上文提到的[廖雪峰的网站](https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304 "out")，[Pro Git电子书](https://github.com/progit/progit2-zh/releases/download/2.1.55/progit_v2.1.55.pdf "out") [Pro Git](https://git-scm.com/book/zh/v2 "out") [不明来源的网站](https://codechina.csdn.net/explore "out")以及自行Google
+
