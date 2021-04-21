@@ -169,7 +169,9 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 
 　　如果你会用qt的话，使用qtcreator打开rm-vision.pro,然后简单配置一下构建工具和项目目录以及工业相机驱动，就可以run了，不过这部分目前不是本教程的重点内容。~~（下次一定教）~~
 
+　　简单一改readme，加个空格啥的（这就类似于我们以后改了什么代码），然后`git add .`  、`git commit -m "Test edit"`[![PnUVJc.png](https://piccdn.freejishu.com/images/2021/04/21/PnUVJc.png)](https://pic.freejishu.com/image/PnUVJc) 然后再`git push`![PnUY5g.png](https://piccdn.freejishu.com/images/2021/04/21/PnUY5g.png) ,现在你再上GitHub中你的仓库那里看一下，是不是已经有一次提交记录以及文件变更了呢？
 
+　　如果你在多个设备上都clone了同一个人的同一个仓库，在一台设备上变更完提交之后，在另一台设备编辑文件之前记得先 `git pull` 这一行代码表示从远程拉取代码。如果你的本地仓库和远端仓库版本一致的话，你会看到这样的提示：[![PnUj9T.png](https://piccdn.freejishu.com/images/2021/04/21/PnUj9T.png)](https://pic.freejishu.com/image/PnUj9T) 
 
 
 
