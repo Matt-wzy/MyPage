@@ -69,6 +69,9 @@ list-max-height：playlist的最大高度
 
 [这个网页](https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/ "out这个网页")告诉你怎么配置到页面左下角，[这个页面](http://yangyingming.com/article/428/ "out这个页面")告诉你怎么配置到文档内部
 
+https://apps.apple.com/cn/app/code-app/id1512938504
+iPad上编辑并提交
+
 ------------
 # 这一段是原文档有的内容
 
