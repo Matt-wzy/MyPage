@@ -163,7 +163,8 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 
 　　现在你会发现你下载下来的项目里面有一个隐藏文件夹名字为.git，对的，如此clone下的项目，git已经为你做好初始化了，你也不需要填什么仓库地址搞那些麻烦的东西
 
-克隆下来的仓库应该长这样：
+　　克隆下来的仓库应该长这样：
+
 
 This page is still building&updating ... 
 
