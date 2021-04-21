@@ -165,9 +165,16 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 
 　　克隆下来的仓库应该长这样：
 
+![PnUAdE.png](https://piccdn.freejishu.com/images/2021/04/21/PnUAdE.png)
+
+　　如果你会用qt的话，使用qtcreator打开rm-vision.pro,然后简单配置一下构建工具和项目目录以及工业相机驱动，就可以run了，不过这部分目前不是本教程的重点内容。~~（下次一定教）~~
+
+
+
+
 
 This page is still building&updating ... 
 
 [<img src="{{ site.baseurl }}/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{: .center-image}]({{ site.baseurl }}/)
 
-好了，有关git和GitHub的入门教程先到这了，我以后还会再写个文档专门讲述git命令与GitHub中名词的理解，若想在此之前自学git&GitHub用法请点击上文提到的廖雪峰的网站以及自行Google
+　　好了，有关git和GitHub的入门教程先到这了，我以后还会再写个文档专门讲述git命令与GitHub中名词的理解，若想在此之前自学git&GitHub用法请点击上文提到的廖雪峰的网站以及自行Google
