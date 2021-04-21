@@ -162,3 +162,9 @@ git clone git@github.com:你的GitHub用户名/R-M_Robot.git
 　　wala~ 你现在已经拿到了和我们视觉组3月27号一模一样的整个项目代码，如果你想可以大致阅览一下，不过我们此篇教程重点在于使用git&GitHub，所以暂不介绍目录结构和代码功能。
 
 　　现在你会发现你下载下来的项目里面有一个隐藏文件夹名字为.git，对的，如此clone下的项目，git已经为你做好初始化了，你也不需要填什么仓库地址搞那些麻烦的东西
+
+This page is still building&updating ... 
+
+[<img src="{{ site.baseurl }}/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>{: .center-image}]({{ site.baseurl }}/)
+
+好了，有关git和GitHub的入门教程先到这了，我以后还会再写个文档专门讲述git命令与GitHub中名词的理解，若想在此之前自学git&GitHub用法请点击上文提到的廖雪峰的网站以及自行Google
