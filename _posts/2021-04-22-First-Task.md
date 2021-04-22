@@ -45,6 +45,14 @@ Git&GitHub教程链接
 
 ### 考核地址：
 
-https://wj.qq.com/s2/8364181/b4a9/
+<https://wj.qq.com/s2/8364181/b4a9/>
 
 截止时间：周六夜8：00
+
+## 教程地址：
+Git：[Pro Git](https://git-scm.com/book/zh/ "out")
+ 
+
+GitHub: [GitHub Doc](https://docs.github.com/cn/github/getting-started-with-github "out")
+
+尚未完工的Git&GitHub使用教程（尚不完善）：[阿巴](https://matt-wzy.github.io/MyPage/HowToUse-GitHub-and-Git/)
