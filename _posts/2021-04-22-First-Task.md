@@ -9,6 +9,11 @@ toc: true
 #theme: github-dark-orshen
 ---
 
+> 要考核了，伙计们（（（（
+
+<!-- more -->
+
+
 ## Git&GitHub：
 
 推测学习使用时间：
