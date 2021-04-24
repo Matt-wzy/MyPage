@@ -11,7 +11,7 @@ toc: true
 
 
 <div>
-    <meting-js server="netease" type="playlist" id="6713520209" autoplay="false" list-max-height=1200px>
+    <meting-js server="netease" type="playlist" id="6713520209" autoplay="false" list-max-height=120px>
     </meting-js>
 </div>
 
