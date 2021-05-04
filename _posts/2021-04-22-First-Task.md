@@ -19,7 +19,7 @@ toc: true
 推测学习使用时间：
 2~3 节小课
 
-- 建议执行的任务：
+ 建议执行的任务：
 
 - 注册一个GitHub账户
 
@@ -29,7 +29,7 @@ toc: true
 
 
 
-fork一下Matt-wzy/R-M_Robot 并使用git clone下载到本地，随意更改readme内容后commit、push。
+- fork一下Matt-wzy/R-M_Robot 并使用git clone下载到本地，随意更改readme内容后commit、push。
 简单自学一下如何进行版本回退。
 
 执行任务用时估计：一小时
