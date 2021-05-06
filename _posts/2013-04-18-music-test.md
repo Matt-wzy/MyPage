@@ -23,3 +23,9 @@ toc: false
 	auto="https://y.qq.com/n/yqq/song/000gegrH19bl5D.html?ADTAG=h5_playsong&no_redirect=1">
 </meting-js>
 </div>
+
+<div>
+<meting-js
+	auto="https://y.qq.com/n/yqq/song/003OLQWW4UGDp2.html?ADTAG=h5_playsong&no_redirect=1">
+</meting-js>
+</div>
