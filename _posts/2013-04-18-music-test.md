@@ -29,3 +29,10 @@ toc: false
 	auto="https://y.qq.com/n/yqq/song/003OLQWW4UGDp2.html?ADTAG=h5_playsong&no_redirect=1">
 </meting-js>
 </div>
+
+
+<div>
+<meting-js
+	auto="https://y.qq.com/n/yqq/album/000lKfvl0dHqmB.html#stat=y_new.song.header.albumname">
+</meting-js>
+</div>
