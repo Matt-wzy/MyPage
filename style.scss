@@ -35,11 +35,12 @@ body {
 .dark-mode {
   background-color: black;
   p{color: white;}
-  color: white;
+  
   // .highlight {background: black;  }
   // .wrapper-sidebar{background: black;}
   .site-name {color: white;}
   ::selection {background: black; }
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
