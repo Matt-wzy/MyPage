@@ -36,9 +36,10 @@ body {
   background-color: black;
   p{color: white;}
   color: white;
-  .highlight {background: black;  }
-  .wrapper-sidebar{background: black;}
+  // .highlight {background: black;  }
+  // .wrapper-sidebar{background: black;}
   .site-name {color: white;}
+  ::selection {background: black; }
 }
 
 h1, h2, h3, h4, h5, h6 {
