@@ -17,6 +17,7 @@
     </div>
 
     
+    <button onclick="myFunction()">Toggle dark mode</button>
   </body>
   <!-- toko -->
 
@@ -25,6 +26,10 @@
   {% if page.toc==true %}
   <script>
     document.getElementById("main").classList.add("withtoc");
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
   </script>
   {% endif %}
 
