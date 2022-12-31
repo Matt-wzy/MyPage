@@ -33,14 +33,21 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
-  p{color: white;}
+  background-color: {
+    /*反相颜色后再将色相旋转 180 度，使亮度反相*/
+    filter: invert(1) hue-rotate(180deg);
+};
+  p,.site-name,::selection,.highlight,.wrapper-sidebar{
+    /*反相颜色后再将色相旋转 180 度，使亮度反相*/
+    filter: invert(1) hue-rotate(180deg);
+}
   
   // .highlight {background: black;  }
   // .wrapper-sidebar{background: black;}
-  .site-name {color: white;}
-  ::selection {background: black; }
+  // .site-name {color: white;}
+  // ::selection {background: black; }
   color: white;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
