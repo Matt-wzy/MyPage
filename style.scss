@@ -421,7 +421,7 @@ dd {
     max-width: 100%;
     margin: 0 0 1em;
     border-radius: 5px;
-    filter: invert(1) hue-rotate(180deg) brightness(.8);
+    filter: brightness(.8);
   }
 }
 
