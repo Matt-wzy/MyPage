@@ -36,11 +36,16 @@ body {
   background-color: {
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
-};
+  };
   p,.site-name,::selection,.highlight,.wrapper-sidebar{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
-}
+  }
+  img { 
+  /*MDx 方案*/
+  filter: brightness(.8);
+
+  }
   
   // .highlight {background: black;  }
   // .wrapper-sidebar{background: black;}
