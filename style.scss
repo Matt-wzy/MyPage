@@ -47,7 +47,7 @@ body {
   }
   img { 
   /*MDx 方案*/
-  filter: brightness(.8);
+  filter: invert(1) hue-rotate(180deg) brightness(.8);
   }
   .aplayer,.wrapper-footer-mobile{background:#212121;
     background-color:#212121;}
