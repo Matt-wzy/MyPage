@@ -14,23 +14,30 @@
 /**************/
 /* BASE RULES */
 /**************/
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #212121;
-      color: rgba(255, 255, 255, .7);
-  }
-}
-@media (prefers-color-scheme: light){
+// @media (prefers-color-scheme: dark) {
+//   body {
+//       background-color: #212121;
+//       color: rgba(255, 255, 255, .7);
+//   }
+// }
+// @media (prefers-color-scheme: light){
 html {
   font-size: $base-font-size;
 }
-
-body {
-  font-family: $base-font;
-  color: $base-color;
-  line-height: 1.7em;
+@media (prefers-color-scheme: light){
+  body {
+    font-family: $base-font;
+    color: $base-color;
+    line-height: 1.7em;
+  }
 }
-
+@media (prefers-color-scheme: dark){
+  body {
+    font-family: $base-font;
+    color: $base-color-dark;
+    line-height: 1.7em;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -38,34 +45,34 @@ body {
   width: 100%;
 }
 
-.dark-mode {
-  background-color: #212121 ;
-  // p:not(:has(a)){filter: invert(1) hue-rotate(180deg);}
-  .site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
-    /*反相颜色后再将色相旋转 180 度，使亮度反相*/
-    filter: invert(1) hue-rotate(180deg);
-  }
-  // img { 
-  // /*MDx 方案*/
-  // filter: invert(1) hue-rotate(180deg) brightness(.8);
-  // }
-  p {
-    filter: invert(1) hue-rotate(180deg);  /* 这是你想要应用到文本的滤镜效果 */
-  }
-  p a img {
-    filter: invert(1) hue-rotate(180deg) brightness(.8);  /* 这是你想要应用到图像的滤镜效果 */
-  }
-  .aplayer,.wrapper-footer-mobile{background:#212121;
-    background-color:#212121;}
+// .dark-mode {
+//   background-color: #212121 ;
+//   // p:not(:has(a)){filter: invert(1) hue-rotate(180deg);}
+//   .site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
+//     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
+//     filter: invert(1) hue-rotate(180deg);
+//   }
+//   // img { 
+//   // /*MDx 方案*/
+//   // filter: invert(1) hue-rotate(180deg) brightness(.8);
+//   // }
+//   p {
+//     filter: invert(1) hue-rotate(180deg);  /* 这是你想要应用到文本的滤镜效果 */
+//   }
+//   p a img {
+//     filter: invert(1) hue-rotate(180deg) brightness(.8);  /* 这是你想要应用到图像的滤镜效果 */
+//   }
+//   .aplayer,.wrapper-footer-mobile{background:#212121;
+//     background-color:#212121;}
   
   
-  // .highlight {background: black;  }
-  // .wrapper-sidebar{background: black;}
-  // .site-name {color: white;}
-  // ::selection {background: black; }
-  // color: white;
+//   // .highlight {background: black;  }
+//   // .wrapper-sidebar{background: black;}
+//   // .site-name {color: white;}
+//   // ::selection {background: black; }
+//   // color: white;
   
-}
+// }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2em;
@@ -95,35 +102,65 @@ h2 {
 h3 {
   font-size: 20px;
 }
+@media (prefers-color-scheme: light){
+  h4 {
+    font-size: 20px;
+    color: $base-lighten-color;
+  }
 
-h4 {
-  font-size: 20px;
-  color: $base-lighten-color;
-}
-
-h6 {
-  color: $base-lighten-color;
-}
-
-p {
-  color: $text-color;
-  margin: 1em 0;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-
-  &:hover, &:active {
-    color: $link-lighten-color;
+  h6 {
+    color: $base-lighten-color;
+  }
+  p {
+    color: $text-color;
+    margin: 1em 0;
+  }
+  a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  
+    &:hover, &:active {
+      color: $link-lighten-color;
+    }
   }
 }
+@media (prefers-color-scheme: dark){
+  h4 {
+    font-size: 20px;
+    color: $base-lighten-color;
+  }
+
+  h6 {
+    color: $base-lighten-color;
+  }
+  p {
+    color: $text-color-dark;
+    margin: 1em 0;
+  }
+  a {
+    color: $link-color-dark;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  
+    &:hover, &:active {
+      color: $link-lighten-color-dark;
+    }
+  }
+}
+
+
+
 
 em, i {
   font-style: italic;
@@ -142,13 +179,20 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
-
-hr {
-  border: 0;
-  border-top: 1px solid $divider-color;
-  margin: 1.5em auto;
+@media (prefers-color-scheme: light){
+  hr {
+    border: 0;
+    border-top: 1px solid $divider-color;
+    margin: 1.5em auto;
+  }
 }
-
+@media (prefers-color-scheme: dark){
+  hr {
+    border: 0;
+    border-top: 1px solid $divider-color-dark;
+    margin: 1.5em auto;
+  }
+}
 // Yeun's list style
 // https://gist.github.com/yeun/d824fc7b04b756508f4b0143535cec30
 
@@ -235,74 +279,149 @@ dd {
     margin-left: 140px;
   }
 }
-
-// Table
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid $table-border-color;
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: .25rem .5rem;
-  border: 1px solid $table-border-color;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: $table-background-color;
-}
-
-// Blockquote
-blockquote {
-  font-weight: 300;
-  padding: 0 0 0 1.4rem;
-  margin: 0 2rem 1rem 0;
-  border-left: .2em solid $blockquote-border-color;
-
-  p {
-    color: $blockquote-color;
+@media (prefers-color-scheme: light){
+  // Table
+  table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $table-border-color;
+    border-collapse: collapse;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  td, th {
+    padding: .25rem .5rem;
+    border: 1px solid $table-border-color;
   }
-}
 
-// Footnote
-a.footnote {
-  &,
-  .post p &,
-  .post ol &,
-  .post ul & {
-    margin: 0 3px;
-    padding: 0 2px;
-    font-size: $small-font-size;
-    text-align: center;
-    border: 1px solid $footnote-link-border-color;
-    border-radius: 2px;
-    -webkit-text-stroke: 0.25px;
-    -webkit-transition: 0.2s ease-out all;
-    text-decoration: none;
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $table-background-color;
+  }
 
-    &:hover {
-      background: $footnote-link-background-over-color;
+  // Blockquote
+  blockquote {
+    font-weight: 300;
+    padding: 0 0 0 1.4rem;
+    margin: 0 2rem 1rem 0;
+    border-left: .2em solid $blockquote-border-color;
+
+    p {
+      color: $blockquote-color;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
+
+  // Footnote
+  a.footnote {
+    &,
+    .post p &,
+    .post ol &,
+    .post ul & {
+      margin: 0 3px;
+      padding: 0 2px;
+      font-size: $small-font-size;
+      text-align: center;
+      border: 1px solid $footnote-link-border-color;
+      border-radius: 2px;
+      -webkit-text-stroke: 0.25px;
+      -webkit-transition: 0.2s ease-out all;
+      text-decoration: none;
+
+      &:hover {
+        background: $footnote-link-background-over-color;
+      }
+    }
+  }
+
+  .footnotes {
+    border-top: 1px solid $divider-color;
+    font-size: $small-font-size;
+  }
+}
+@media (prefers-color-scheme: dark){
+  // Table
+  table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $table-border-color-dark;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: .25rem .5rem;
+    border: 1px solid $table-border-color-dark;
+  }
+
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $table-background-color-dark;
+  }
+
+  // Blockquote
+  blockquote {
+    font-weight: 300;
+    padding: 0 0 0 1.4rem;
+    margin: 0 2rem 1rem 0;
+    border-left: .2em solid $blockquote-border-color-dark;
+
+    p {
+      color: $blockquote-color-dark;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Footnote
+  a.footnote {
+    &,
+    .post p &,
+    .post ol &,
+    .post ul & {
+      margin: 0 3px;
+      padding: 0 2px;
+      font-size: $small-font-size;
+      text-align: center;
+      border: 1px solid $footnote-link-border-color-dark;
+      border-radius: 2px;
+      -webkit-text-stroke: 0.25px;
+      -webkit-transition: 0.2s ease-out all;
+      text-decoration: none;
+
+      &:hover {
+        background: $footnote-link-background-over-color-dark;
+      }
+    }
+  }
+
+  .footnotes {
+    border-top: 1px solid $divider-color-dark;
+    font-size: $small-font-size;
+  }
 }
 
-.footnotes {
-  border-top: 1px solid $divider-color;
-  font-size: $small-font-size;
+@media (prefers-color-scheme: light){
+  // Image
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1em;
+    border-radius: 5px;
+  }
 }
-
-// Image
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1em;
-  border-radius: 5px;
+@media (prefers-color-scheme: dark){
+  // Image
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1em;
+    border-radius: 5px;
+    filter: invert(1) hue-rotate(180deg) brightness(.8);
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -310,14 +429,27 @@ img {
   max-width: none;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-//  color: $selection-color;
-  background: $selection-background-color;
+@media (prefers-color-scheme: light){
+  // Specify the color of the selection
+  ::-moz-selection {
+  //  color: $selection-color;
+    background: $selection-background-color;
+  }
+  ::selection {
+  //  color: $selection-color;
+    background: $selection-background-color;
+  }
 }
-::selection {
-//  color: $selection-color;
-  background: $selection-background-color;
+@media (prefers-color-scheme: dark){
+  // Specify the color of the selection
+  ::-moz-selection {
+  //  color: $selection-color;
+    background: $selection-background-color-dark;
+  }
+  ::selection {
+  //  color: $selection-color;
+    background: $selection-background-color-dark;
+  }
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -354,25 +486,51 @@ img {
 // .sidebar
 //
 
-.wrapper-sidebar {
-  width: 30%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: $background-color;
-	height: 100%;
-	top: 0;
-	left:0;
-	position: fixed;
-	z-index: 4;
-  border-right: 1px solid $divider-color;
+@media (prefers-color-scheme: light){
+  .wrapper-sidebar {
+    width: 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: $background-color;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid $divider-color;
 
-  @include mobile {
-    width: 100%;
-    height: auto;
-    padding-bottom: 24px;
-    position: relative;
-    border-bottom: 1px solid $divider-color;
-    border-right: 0;
+    @include mobile {
+      width: 100%;
+      height: auto;
+      padding-bottom: 24px;
+      position: relative;
+      border-bottom: 1px solid $divider-color;
+      border-right: 0;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  .wrapper-sidebar {
+    width: 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: $background-color-dark;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid $divider-color-dark;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+      padding-bottom: 24px;
+      position: relative;
+      border-bottom: 1px solid $divider-color-dark;
+      border-right: 0;
+    }
   }
 }
 
@@ -412,23 +570,47 @@ img {
   }
 }
 
-.site-name {
-  margin: 0 auto;
-  color: $base-color;
-  cursor: pointer;
-  font-family: $base-font;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 1px;
+
+@media (prefers-color-scheme: light){
+  .site-name {
+    margin: 0 auto;
+    color: $base-color;
+    cursor: pointer;
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .site-description {
+    margin: 15px auto;
+    color: $base-lighten-color;
+    font-size: 16px;
+
+    @include mobile {
+      margin: 10px auto;
+    }
+  }
 }
+@media (prefers-color-scheme: dark){
+  .site-name {
+    margin: 0 auto;
+    color: $base-color-dark;
+    cursor: pointer;
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 
-.site-description {
-  margin: 15px auto;
-  color: $base-lighten-color;
-  font-size: 16px;
+  .site-description {
+    margin: 15px auto;
+    color: $base-lighten-color-dark;
+    font-size: 16px;
 
-  @include mobile {
-    margin: 10px auto;
+    @include mobile {
+      margin: 10px auto;
+    }
   }
 }
 
@@ -506,9 +688,19 @@ nav {
   }
 }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $divider-color;
+@media (prefers-color-scheme: light){
+
+  .posts > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $divider-color;
+  }
+}
+@media (prefers-color-scheme: dark){
+
+  .posts > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $divider-color-dark;
+  }
 }
 
 .posts > .post:last-child {
@@ -517,27 +709,50 @@ nav {
 }
 
 
-.pinned .feather-anchor {
-  color: $base-lighten-color;
-  padding: 2px;
-  margin-right: 8px;
+@media (prefers-color-scheme: light){
+  .pinned .feather-anchor {
+    color: $base-lighten-color;
+    padding: 2px;
+    margin-right: 8px;
+  }
+
+
+  .date {
+    font-weight: 300;
+    font-size: $small-font-size;
+    color: $base-lighten-color;
+    margin-right: 4px;
+  }
+
+  .author{
+    font-weight:700;
+    font-size:$small-font-size;
+    color: $base-lighten-color;
+    margin-right: 4px;
+  }
 }
+@media (prefers-color-scheme: dark){
+  .pinned .feather-anchor {
+    color: $base-lighten-color-dark;
+    padding: 2px;
+    margin-right: 8px;
+  }
 
 
-.date {
-  font-weight: 300;
-  font-size: $small-font-size;
-  color: $base-lighten-color;
-  margin-right: 4px;
+  .date {
+    font-weight: 300;
+    font-size: $small-font-size;
+    color: $base-lighten-color-dark;
+    margin-right: 4px;
+  }
+
+  .author{
+    font-weight:700;
+    font-size:$small-font-size;
+    color: $base-lighten-color-dark;
+    margin-right: 4px;
+  }
 }
-
-.author{
-  font-weight:700;
-  font-size:$small-font-size;
-  color: $base-lighten-color;
-  margin-right: 4px;
-}
-
 
 .post {
 
@@ -784,7 +999,7 @@ footer {
     }
   }
 }
-}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
