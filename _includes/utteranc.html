@@ -1,4 +1,11 @@
 {% if site.utteranc %}
+<script src="https://utteranc.es/client.js"
+        repo="{{ site.utteranc.repo }}"
+        issue-term="讨论于［ {{ page.title | default: 'issue-term' }} ］"
+        label="{{ site.utteranc.label | default: 'utteranc' }}"
+        crossorigin="{{ site.utteranc.crossorigin | default: 'anonymous' }}"
+        async>
+</script>
 <!-- <script src="https://utteranc.es/client.js"
         repo="{{ site.utteranc.repo }}"
         issue-term="讨论于［ {{ page.title | default: 'issue-term' }} ］"
@@ -7,7 +14,7 @@
         crossorigin="{{ site.utteranc.crossorigin | default: 'anonymous' }}"
         async>
 </script> -->
-<script>
+<!-- <script>
     const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const currTheme = dark ? 'github-dark-orange' : 'github-light';
     const skript = document.createElement('script');
@@ -19,5 +26,5 @@
     skript.setAttribute('label', "{{ site.utteranc.label | default: 'utteranc' }}");
     skript.setAttribute('theme', currTheme);
     document.body.appendChild(skript);
-</script>
+</script> -->
 {% endif %}
