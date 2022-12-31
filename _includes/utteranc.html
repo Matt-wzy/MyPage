@@ -16,6 +16,7 @@
     skript.async = true;
     skript.setAttribute('repo', "{{ site.utteranc.repo }}");
     skript.setAttribute('issue-term', "讨论于［ {{ page.title | default: 'issue-term' }} ］");
+    skript.setAttribute('label', "{{ site.utteranc.label | default: 'utteranc' }}");
     skript.setAttribute('theme', currTheme);
     document.body.appendChild(skript);
 </script>
