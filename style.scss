@@ -53,7 +53,7 @@ body {
     filter: invert(1) hue-rotate(180deg);  /* 这是你想要应用到文本的滤镜效果 */
   }
   p a img {
-    filter: brightness(.8);  /* 这是你想要应用到图像的滤镜效果 */
+    filter: invert(1) hue-rotate(180deg) brightness(.8);  /* 这是你想要应用到图像的滤镜效果 */
   }
   .aplayer,.wrapper-footer-mobile{background:#212121;
     background-color:#212121;}
