@@ -1,10 +1,22 @@
 {% if site.utteranc %}
-<script src="https://utteranc.es/client.js"
+<!-- <script src="https://utteranc.es/client.js"
         repo="{{ site.utteranc.repo }}"
         issue-term="讨论于［ {{ page.title | default: 'issue-term' }} ］"
         label="{{ site.utteranc.label | default: 'utteranc' }}"
         theme="{{ page.theme | default: 'github-light' }}"
         crossorigin="{{ site.utteranc.crossorigin | default: 'anonymous' }}"
         async>
+</script> -->
+<script>
+    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currTheme = dark ? 'github-dark-orange' : 'github-light';
+    const skript = document.createElement('script');
+    skript.src = "https://utteranc.es/client.js";
+    skript.crossOrigin = "{{ site.utteranc.crossorigin | default: 'anonymous' }}";
+    skript.async = true;
+    skript.setAttribute('repo', "{{ site.utteranc.repo }}");
+    skript.setAttribute('issue-term', "讨论于［ {{ page.title | default: 'issue-term' }} ］");
+    skript.setAttribute('theme', currTheme);
+    document.body.appendChild(skript);
 </script>
 {% endif %}
