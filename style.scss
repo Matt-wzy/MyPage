@@ -31,12 +31,12 @@ html {
     line-height: 1.7em;
   }
 .dark-mode{
-  body {
+  
     font-family: $base-font;
     color: $base-color-dark;
     line-height: 1.7em;
     background-color: $page-background-color-dark;
-  }
+  
 }
 .container {
   margin: 0 auto;
@@ -132,11 +132,11 @@ h3 {
 .dark-mode{
   h4 {
     font-size: 20px;
-    color: $base-lighten-color;
+    color: $base-lighten-color-dark;
   }
 
   h6 {
-    color: $base-lighten-color;
+    color: $base-lighten-color-dark;
   }
   p {
     color: $text-color-dark;
