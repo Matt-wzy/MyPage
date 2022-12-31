@@ -830,115 +830,230 @@ nav {
   }
 }
 
-// pagination
 
-.pagination {
-  border-top: 1px solid $divider-color;
-  font-weight: 300;
-  padding: 40px 0;
-  width: 100%;
-  display: inline-block;
 
-  @include mobile {
-    font-size: $small-font-size;
-    padding: 24px 0;
-  }
+@media (prefers-color-scheme: light){
+  // pagination
+  .pagination {
+    border-top: 1px solid $divider-color;
+    font-weight: 300;
+    padding: 40px 0;
+    width: 100%;
+    display: inline-block;
 
-  > .prev {
-    float: left;
-    width: 50%;
-    a {
-      color: $base-lighten-color;
-      border: 1px solid $divider-color;
-      padding: 10px 20px;
-      background: $background-color;
+    @include mobile {
+      font-size: $small-font-size;
+      padding: 24px 0;
+    }
 
-      &:hover, &:focus {
-        color: $link-lighten-color;
-        border: 1px solid $link-lighten-color;
-        background-color: $link-bghv-color;
+    > .prev {
+      float: left;
+      width: 50%;
+      a {
+        color: $base-lighten-color;
+        border: 1px solid $divider-color;
+        padding: 10px 20px;
+        background: $background-color;
+
+        &:hover, &:focus {
+          color: $link-lighten-color;
+          border: 1px solid $link-lighten-color;
+          background-color: $link-bghv-color;
+        }
       }
     }
-  }
 
-  > .next {
-    float: right;
-    text-align: right;
-    width: 50%;
-    a {
-      color: $base-lighten-color;
-      border: 1px solid $divider-color;
-      padding: 10px 20px;
-      background: $background-color;
+    > .next {
+      float: right;
+      text-align: right;
+      width: 50%;
+      a {
+        color: $base-lighten-color;
+        border: 1px solid $divider-color;
+        padding: 10px 20px;
+        background: $background-color;
 
-      &:hover, &:focus {
-        color: $link-lighten-color;
-        border: 1px solid $link-lighten-color;
-        background-color: $link-bghv-color;
-      }
-    }
-  }
-}
-
-// Archive
-.archive {
-  a {
-    color: $base-color;
-  }
-  time {
-    color: $base-lighten-color;
-    font-size: $small-font-size;
-    font-weight: 300;
-    margin-left: 3px;
-  }
-}
-
-// Tags
-.tags > .label {
-  > li:before {
-    content: "";
-  }
-
-  > li {
-    margin: 0;
-    font-size: $small-font-size;
-    font-weight: 300;
-    display: inline;
-
-    > a {
-      display: inline-block;
-      margin: 1px;
-      color: $base-color;
-      background-color: $tag-index-label-background-color;
-      border-radius: 3px;
-
-      &:hover {
-        background-color: $link-bghv-color;
-      }
-
-      span {
-        float: left;
-        padding: .5px 5px;
-
-        &.count {
-          background-color: $tag-index-count-background-color;
-          border-radius: 0 3px 3px 0;
-
+        &:hover, &:focus {
+          color: $link-lighten-color;
+          border: 1px solid $link-lighten-color;
+          background-color: $link-bghv-color;
         }
       }
     }
   }
-}
 
-.tags > .tag {
-  a {
-    color: $base-color;
+  // Archive
+  .archive {
+    a {
+      color: $base-color;
+    }
+    time {
+      color: $base-lighten-color;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
   }
-  time {
-    color: $base-lighten-color;
-    font-size: $small-font-size;
+
+  // Tags
+  .tags > .label {
+    > li:before {
+      content: "";
+    }
+
+    > li {
+      margin: 0;
+      font-size: $small-font-size;
+      font-weight: 300;
+      display: inline;
+
+      > a {
+        display: inline-block;
+        margin: 1px;
+        color: $base-color;
+        background-color: $tag-index-label-background-color;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $link-bghv-color;
+        }
+
+        span {
+          float: left;
+          padding: .5px 5px;
+
+          &.count {
+            background-color: $tag-index-count-background-color;
+            border-radius: 0 3px 3px 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .tags > .tag {
+    a {
+      color: $base-color;
+    }
+    time {
+      color: $base-lighten-color;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
+  }
+}
+@media (prefers-color-scheme: dark){
+  // pagination
+  .pagination {
+    border-top: 1px solid $divider-color-dark;
     font-weight: 300;
-    margin-left: 3px;
+    padding: 40px 0;
+    width: 100%;
+    display: inline-block;
+
+    @include mobile {
+      font-size: $small-font-size;
+      padding: 24px 0;
+    }
+
+    > .prev {
+      float: left;
+      width: 50%;
+      a {
+        color: $base-lighten-color-dark;
+        border: 1px solid $divider-color-dark;
+        padding: 10px 20px;
+        background: $background-color-dark;
+
+        &:hover, &:focus {
+          color: $link-lighten-color-dark;
+          border: 1px solid $link-lighten-color-dark;
+          background-color: $link-bghv-color-dark;
+        }
+      }
+    }
+
+    > .next {
+      float: right;
+      text-align: right;
+      width: 50%;
+      a {
+        color: $base-lighten-color-dark;
+        border: 1px solid $divider-color-dark;
+        padding: 10px 20px;
+        background: $background-color-dark;
+
+        &:hover, &:focus {
+          color: $link-lighten-color-dark;
+          border: 1px solid $link-lighten-color-dark;
+          background-color: $link-bghv-color-dark;
+        }
+      }
+    }
+  }
+
+  // Archive
+  .archive {
+    a {
+      color: $base-color-dark;
+    }
+    time {
+      color: $base-lighten-color-dark;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
+  }
+
+  // Tags
+  .tags > .label {
+    > li:before {
+      content: "";
+    }
+
+    > li {
+      margin: 0;
+      font-size: $small-font-size;
+      font-weight: 300;
+      display: inline;
+
+      > a {
+        display: inline-block;
+        margin: 1px;
+        color: $base-color-dark;
+        background-color: $tag-index-label-background-color-dark;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $link-bghv-color-dark;
+        }
+
+        span {
+          float: left;
+          padding: .5px 5px;
+
+          &.count {
+            background-color: $tag-index-count-background-color-dark;
+            border-radius: 0 3px 3px 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .tags > .tag {
+    a {
+      color: $base-color-dark;
+    }
+    time {
+      color: $base-lighten-color-dark;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
   }
 }
 
