@@ -20,18 +20,17 @@
 //       color: rgba(255, 255, 255, .7);
 //   }
 // }
-// @media (prefers-color-scheme: light){
+// 
 html {
   font-size: $base-font-size;
 }
-@media (prefers-color-scheme: light){
+
   body {
     font-family: $base-font;
     color: $base-color;
     line-height: 1.7em;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   body {
     font-family: $base-font;
     color: $base-color-dark;
@@ -103,7 +102,7 @@ h2 {
 h3 {
   font-size: 20px;
 }
-@media (prefers-color-scheme: light){
+
   h4 {
     font-size: 20px;
     color: $base-lighten-color;
@@ -130,8 +129,7 @@ h3 {
       color: $link-lighten-color;
     }
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   h4 {
     font-size: 20px;
     color: $base-lighten-color;
@@ -180,14 +178,13 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
-@media (prefers-color-scheme: light){
+
   hr {
     border: 0;
     border-top: 1px solid $divider-color;
     margin: 1.5em auto;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   hr {
     border: 0;
     border-top: 1px solid $divider-color-dark;
@@ -280,7 +277,7 @@ dd {
     margin-left: 140px;
   }
 }
-@media (prefers-color-scheme: light){
+
   // Table
   table {
     margin-bottom: 1rem;
@@ -341,8 +338,7 @@ dd {
     border-top: 1px solid $divider-color;
     font-size: $small-font-size;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   // Table
   table {
     margin-bottom: 1rem;
@@ -405,7 +401,7 @@ dd {
   }
 }
 
-@media (prefers-color-scheme: light){
+
   // Image
   img {
     display: block;
@@ -413,8 +409,7 @@ dd {
     margin: 0 0 1em;
     border-radius: 5px;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   // Image
   img {
     display: block;
@@ -430,7 +425,7 @@ dd {
   max-width: none;
 }
 
-@media (prefers-color-scheme: light){
+
   // Specify the color of the selection
   ::-moz-selection {
   //  color: $selection-color;
@@ -440,8 +435,7 @@ dd {
   //  color: $selection-color;
     background: $selection-background-color;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   // Specify the color of the selection
   ::-moz-selection {
   //  color: $selection-color;
@@ -487,7 +481,7 @@ dd {
 // .sidebar
 //
 
-@media (prefers-color-scheme: light){
+
   .wrapper-sidebar {
     width: 30%;
     -webkit-background-size: cover;
@@ -572,7 +566,7 @@ dd {
 }
 
 
-@media (prefers-color-scheme: light){
+
   .site-name {
     margin: 0 auto;
     color: $base-color;
@@ -592,8 +586,7 @@ dd {
       margin: 10px auto;
     }
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   .site-name {
     margin: 0 auto;
     color: $base-color-dark;
@@ -672,7 +665,7 @@ nav {
     li {
       display: inline;
       margin: 0;
-      @media (prefers-color-scheme: light){
+      
         > a {
           margin: 3px 3px 3px 0;
           padding: .5px 4px;
@@ -704,14 +697,13 @@ nav {
   }
 }
 
-@media (prefers-color-scheme: light){
+
 
   .posts > .post {
     padding-bottom: 2em;
     border-bottom: 1px solid $divider-color;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
 
   .posts > .post {
     padding-bottom: 2em;
@@ -725,7 +717,7 @@ nav {
 }
 
 
-@media (prefers-color-scheme: light){
+
   .pinned .feather-anchor {
     color: $base-lighten-color;
     padding: 2px;
@@ -746,8 +738,7 @@ nav {
     color: $base-lighten-color;
     margin-right: 4px;
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   .pinned .feather-anchor {
     color: $base-lighten-color-dark;
     padding: 2px;
@@ -832,7 +823,7 @@ nav {
 
 
 
-@media (prefers-color-scheme: light){
+
   // pagination
   .pagination {
     border-top: 1px solid $divider-color;
@@ -943,8 +934,7 @@ nav {
       margin-left: 3px;
     }
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   // pagination
   .pagination {
     border-top: 1px solid $divider-color-dark;
@@ -1059,7 +1049,7 @@ nav {
 
 
 
-@media (prefers-color-scheme: light){
+
   // Footer
   .wrapper-footer-desktop {
     margin-top: 50px;
@@ -1131,8 +1121,7 @@ nav {
       }
     }
   }
-}
-@media (prefers-color-scheme: dark){
+.dark-mode{
   // Footer
   .wrapper-footer-desktop {
     margin-top: 50px;
