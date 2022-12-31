@@ -40,14 +40,20 @@ body {
 
 .dark-mode {
   background-color: #212121 ;
-  p:not(:has(a)){filter: invert(1) hue-rotate(180deg);}
+  // p:not(:has(a)){filter: invert(1) hue-rotate(180deg);}
   .site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
   }
-  img { 
-  /*MDx 方案*/
-  filter: invert(1) hue-rotate(180deg) brightness(.8);
+  // img { 
+  // /*MDx 方案*/
+  // filter: invert(1) hue-rotate(180deg) brightness(.8);
+  // }
+  p {
+    filter: invert(1) hue-rotate(180deg);  /* 这是你想要应用到文本的滤镜效果 */
+  }
+  p a img {
+    filter: brightness(.8);  /* 这是你想要应用到图像的滤镜效果 */
   }
   .aplayer,.wrapper-footer-mobile{background:#212121;
     background-color:#212121;}
