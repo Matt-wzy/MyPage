@@ -14,6 +14,12 @@
 /**************/
 /* BASE RULES */
 /**************/
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #212121;
+      color: rgba(255, 255, 255, .7);
+  }
+}
 
 html {
   font-size: $base-font-size;
@@ -33,11 +39,8 @@ body {
 }
 
 .dark-mode {
-  background-color: {
-    /*反相颜色后再将色相旋转 180 度，使亮度反相*/
-    filter: invert(1) hue-rotate(180deg);
-  };
-  p,.site-name,::selection,.highlight,.wrapper-sidebar{
+  background-color: #212121 ;
+  p,.site-name,::selection,.highlight,.wrapper-sidebar,footer{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
   }
