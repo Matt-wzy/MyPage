@@ -1205,11 +1205,16 @@ nav {
     }
   }
 }
-
+@media  (prefers-color-scheme: dark) {
+  .aplayer-info{
+      background-color: $background-color-dark;
+      color: $text-color-dark;
+  }
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "gitalk";
-@import "dark-Aplayer";
+// @import "dark-Aplayer";
 
 
