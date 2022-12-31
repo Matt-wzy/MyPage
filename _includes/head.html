@@ -135,6 +135,9 @@
         // 如果系统的暗色模式未开启，则切换到默认模式
         var body = document.body;
         body.classList.remove("dark-mode");
+        // 切换太阳图标和月亮图标的显示状态
+        sunIcon.classList.toggle("hidden");
+        moonIcon.classList.toggle("hidden");
       }
     }
   
@@ -143,5 +146,6 @@
   
     // 监听系统暗色模式的变化
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detectDarkMode);
+    
   </script>
 </head>
