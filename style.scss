@@ -1211,10 +1211,10 @@ nav {
       color: $text-color-dark;
   }
   .aplayer .aplayer-lrc:before{
-    height:0;
+    height:0 !important;
   }
   .aplayer .aplayer-lrc:after{
-    height:0;
+    height:0 !important;
   }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
