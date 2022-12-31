@@ -40,13 +40,14 @@ body {
 
 .dark-mode {
   background-color: #212121 ;
-  p>#text,.site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
+  p,.site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
   }
   img { 
   /*MDx 方案*/
   filter: brightness(.8);
+  filter: invert(1) hue-rotate(180deg);
   }
   .aplayer,.wrapper-footer-mobile{background:#212121;
     background-color:#212121}
