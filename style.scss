@@ -40,7 +40,7 @@ body {
 
 .dark-mode {
   background-color: #212121 ;
-  p,.site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
+  p :not(img),.site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
   }
