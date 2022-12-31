@@ -53,6 +53,20 @@
       // 切换 body 元素的 dark-mode 类
       body.classList.toggle("dark-mode");
     }
+    // 检测系统的暗色模式
+    function detectDarkMode() {
+      // 如果系统的暗色模式已经开启
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // 切换到暗黑模式
+        darkMode();
+      }
+    }
+
+    // 在页面加载时检测系统的暗色模式
+    window.addEventListener('load', detectDarkMode);
+
+    // 监听系统暗色模式的变化
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detectDarkMode);
   </script>
 
   <!-- <script>function darkModeFun() {
