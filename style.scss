@@ -20,7 +20,7 @@
       color: rgba(255, 255, 255, .7);
   }
 }
-
+@media (prefers-color-scheme: no-preference){
 html {
   font-size: $base-font-size;
 }
@@ -40,7 +40,7 @@ body {
 
 .dark-mode {
   background-color: #212121 ;
-  p,.site-name,::selection,.highlight,.wrapper-sidebar,footer{
+  p>#text,.site-name,::selection,.highlight,.wrapper-sidebar,footer,.utterances{
     /*反相颜色后再将色相旋转 180 度，使亮度反相*/
     filter: invert(1) hue-rotate(180deg);
   }
@@ -48,13 +48,15 @@ body {
   /*MDx 方案*/
   filter: brightness(.8);
   }
-  .aplayer{background:#212121}
+  .aplayer,.wrapper-footer-mobile{background:#212121;
+    background-color:#212121}
+  
   
   // .highlight {background: black;  }
   // .wrapper-sidebar{background: black;}
   // .site-name {color: white;}
   // ::selection {background: black; }
-  color: white;
+  // color: white;
   
 }
 
@@ -775,7 +777,7 @@ footer {
     }
   }
 }
-
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
