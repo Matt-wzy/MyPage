@@ -17,7 +17,14 @@
     </div>
 
     
-    <!-- <button onclick="darkModeFun()">Toggle dark mode</button> -->
+    <!-- 悬浮按钮 -->
+  <button id="dark-mode-button" onclick="darkMode()">
+    <!-- 太阳图标 -->
+    <img src="sun.png" alt="太阳图标" id="sun-icon">
+    <!-- 月亮图标 -->
+    <img src="moon.png" alt="月亮图标" id="moon-icon">
+  </button>
+  <!-- End of 悬浮按钮 -->
   </body>
   <!-- toko -->
 
@@ -29,6 +36,24 @@
 
   </script>
   {% endif %}
+
+  <script>
+    // darkMode 函数
+    function darkMode() {
+      // 获取太阳图标和月亮图标
+      var sunIcon = document.getElementById("sun-icon");
+      var moonIcon = document.getElementById("moon-icon");
+       // 切换太阳图标和月亮图标的显示状态
+      sunIcon.classList.toggle("hidden");
+      moonIcon.classList.toggle("hidden");
+
+      // 获取页面的 body 元素
+      var body = document.body;
+
+      // 切换 body 元素的 dark-mode 类
+      body.classList.toggle("dark-mode");
+    }
+  </script>
 
   <!-- <script>function darkModeFun() {
     var element = document.body;
