@@ -6,7 +6,6 @@ author: Matt-wzy
 tags: [essay]
 comments: true
 toc: true
-pinned: true
 theme: github-dark-orange
 ---
 
