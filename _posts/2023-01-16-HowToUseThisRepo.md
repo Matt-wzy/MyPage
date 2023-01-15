@@ -5,8 +5,7 @@ date: 2023-01-16
 author: Matt-wzy
 tags: [essay]
 comments: true
-toc: false
-pinned: false
+toc: true
 ---
 
 好耶，终于写个教程教你们怎么用我这个github pages模板喽~
