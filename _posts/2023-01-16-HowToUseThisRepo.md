@@ -3,7 +3,7 @@ layout: post
 title: 本网站模板复制办法
 date: 2023-01-16
 author: Matt-wzy
-tags: [essay]
+tags: [document]
 comments: true
 toc: true
 ---
