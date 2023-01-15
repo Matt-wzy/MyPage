@@ -1,9 +1,24 @@
-https://matt-wzy.github.io/MyPage/
+https://matt-wzy.github.io/MyPage/    
 
+202301-202401期间会自动跳转到本人只有一年有效期的域名 https://www.matt-wang.me/  ，这是正常现象，并不是被劫持，望周知。
 
 ## 请注意
-本repo为从原样板repo直接复制拿过来用的repo，本人对此pages的操作更多的关注于使用于内容而非技术和代码上，故很多地方必然有不到位之处，因本人时间不是无限的敬请谅解。
 
+本repo为从原样板repo直接复制拿过来用的repo，本人对此pages的操作即在于内容也有部分模板变更，很多地方必然有不到位之处，对于不完美致以歉意。
+
+若您看到本博客后希望直接拿过去用，请稍等，我将在未来几天撰写一篇文章解释如何操作，看到一位LASAC在职大佬（至少他的主页上是这么写的）fork了本项目之后，我很开心~但是不清楚他为什么没有启用对应的github page 以及没有对网站做任何的操作，我猜测可能是他还不太会用吧qwq。
+
+关于本仓库与原仓库对比，添加的功能有但不限于：
+
+- MeetingJS & Aplayer -> 国内音乐平台 歌单 播放功能
+
+- 自适配夜间模式（每开一个新页面重新适配一次，并且只有完全加载好后才判断是否为夜间模式，系统切换暗色模式页面自动切换，按钮开关夜间模式适配）
+
+- 页面跳转可选是否为新开页面打开或页内跳转，使用"out"作为新开页面的标识符
+
+- 页尾添加Hitokoto
+
+- open color 更新至版本1.9.1
 
 ## 下面是原readme
 
@@ -27,7 +42,6 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 
 LOFFER的默认状态是teal，要更换主题颜色，只要打开文件` _sass/_variables.scss `，将文件中所有的teal全部替换成你想要的颜色。例如，查找teal，替换indigo，全部替换，commit，完成！
 
-
 ### 2019-07-20 V0.3.0
 
 新版本增加目录功能，在post的信息中心加入` toc: true `，这篇博文就会显示目录了。
@@ -41,7 +55,6 @@ LOFFER的默认状态是teal，要更换主题颜色，只要打开文件` _sass
 ` # 一级标题 `下面必须是` ## 二级标题 `，如果是` ### 三级标题 `它就人工智障了【手动扶额】
 
 注意：目前目录仅在桌面版显示。
-
 
 ### 2019-06-30 V0.2.0
 
@@ -73,14 +86,11 @@ LOFFER只是容器，你的posts才是博客的核心。
 
 支持Disqus和Gitalk两种评论区。请在_config.yml中设置。
 
-
 ## 致谢
 
 * [Jekyll](https://github.com/jekyll/jekyll) - 这是本站存在的根基
 * [Kiko-now](<https://github.com/aweekj/kiko-now>) - 我首先是fork这个主题，然后再其上进行修改汉化，才有了LOFFER
 * [Font Awesome](<https://fontawesome.com/>) - 社交网络图标来自FontAwesome的免费开源内容
-
-
 
 ## 帮助这个项目
 
