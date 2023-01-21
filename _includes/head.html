@@ -142,7 +142,7 @@
     }
   
     // 在页面加载时检测系统的暗色模式
-    window.addEventListener('load', detectDarkMode);
+    window.addEventListener('DOMContentLoaded', detectDarkMode);
   
     // 监听系统暗色模式的变化
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detectDarkMode);
