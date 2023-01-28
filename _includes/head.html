@@ -122,20 +122,56 @@
   <script>
     // darkMode 函数
     function darkMode() {
-      // // 获取太阳图标和月亮图标
-      // var sunIcon = document.getElementById("sun-icon");
-      // var moonIcon = document.getElementById("moon-icon");
-  
-      // // 切换太阳图标和月亮图标的显示状态
-      // sunIcon.classList.toggle("hidden");
-      // moonIcon.classList.toggle("hidden");
   
       // 获取页面的 body 元素
       var body = document.body;
   
       // 切换 body 元素的 dark-mode 类
       body.classList.toggle("dark-mode");
+      function waitForElm(selector) {
+        return new Promise(resolve => {
+            if (document.querySelector(selector)) {
+                return resolve(document.querySelector(selector));
+            }
+            const observer = new MutationObserver(mutations => {
+                if (document.querySelector(selector)) {
+                    resolve(document.querySelector(selector));
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
     }
+    function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    }
+    if (hasClass(document.body, 'dark-mode')) {
+      // 当前为暗色模式
+      const message = {
+            type: 'set-theme',
+            theme: 'github-dark'
+        };
+        waitForElm('.utterances-frame').then((iframe) => {
+            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+        })
+
+      }
+    else {
+      // 当前为亮色模式
+      const message = {
+            type: 'set-theme',
+            theme: 'github-light'
+        };
+        waitForElm('.utterances-frame').then((iframe) => {
+            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+        })
+
+      }
+    }
+
   
     // 检测系统的暗色模式
     function detectDarkMode() {
