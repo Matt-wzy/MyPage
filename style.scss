@@ -1210,6 +1210,45 @@ nav {
   .aplayer{background:#212529 !important;}
 
 }
+
+/* 亮暗色切换按钮样式 */
+#dark-mode-button {
+  position: fixed; /* 固定按钮位置 */
+  bottom: 20px; /* 将按钮置于页面底部 */
+  right: 20px; /* 将按钮置于页面右侧 */
+  z-index: 99; /* 让按钮显示在其他内容的上面 */
+  cursor: pointer; /* 指针样式 */
+  border: none; /* 去掉边框 */
+  outline: none; /* 去掉聚焦轮廓 */
+  background-color: rgba(51, 91, 221, 0.21); /* 背景色（半透明紫色） */
+  padding: 0; /* 内边距 */
+  border-radius: 50%; /* 圆形按钮 */
+  width: 50px; /* 宽度 */
+  height: 50px; /* 高度 */
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); /* 阴影 */
+  
+}
+
+/* 隐藏月亮图标 */
+#moon-icon {
+  display: none;
+}
+
+/* 暗黑模式时显示月亮图标 */
+body.dark-mode #moon-icon {
+  display: inline-block;
+}
+
+/* 暗黑模式时隐藏太阳图标 */
+body.dark-mode #sun-icon {
+  display: none;
+}
+    /* 缩放图标 */
+#dark-mode-button img {
+  width: 100%; /* 宽度 */
+  height: auto; /* 高度（自动） */
+  filter: invert(100%); /* 反转图片的颜色 */
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
