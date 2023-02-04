@@ -21,7 +21,7 @@ pinned: false
 
 ## 后端源码下载
 
-两个项目二选一 [原作者项目](https://github.com/Annihilatexv/qlu-cr.git) [GitHub - Matt-wzy/qlu-cr: 查询齐鲁工业大学校内空教室](https://github.com/Matt-wzy/qlu-cr.git) 本人在原作者的fork中增删了部分不可用教室的内容。对于图书馆空座查询部分功能增加了session鉴权，防止被当做恶意流量拦截。（当被请求量大时概率拦截，不加鉴权也没问题）
+两个项目二选一 [原作者项目](https://github.com/Annihilatexv/qlu-cr.git) | [GitHub - Matt-wzy/qlu-cr: 查询齐鲁工业大学校内空教室](https://github.com/Matt-wzy/qlu-cr.git) 本人在原作者的fork中增删了部分不可用教室的内容。对于图书馆空座查询部分功能增加了session鉴权，防止被当做恶意流量拦截。（当被请求量大时概率拦截，不加鉴权也没问题）
 
 ## 运行
 
@@ -44,5 +44,3 @@ pinned: false
 本方案基于cloudflare 的cloudflare tunnel，需要你事先有一个域名并且可以将ns解析转移到cloudflare。
 
 使用tunnel教程请参考 此链接 
-
-
