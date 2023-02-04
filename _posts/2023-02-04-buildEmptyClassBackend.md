@@ -25,7 +25,9 @@ pinned: false
 
 ## 运行
 
-> 本部分需要您提前安装好[Python Release Python 3.11.1 | Python.org](https://www.python.org/downloads/release/python-3111/) （后续新版本或以前版本也可以，此版本测试过可以正常运行）
+> 本部分需要您提前安装好python 
+
+[Python Release Python 3.11.1 | Python.org](https://www.python.org/downloads/release/python-3111/)（后续新版本或以前版本也可以，此版本测试过可以正常运行）
 
 在文件夹内部使用命令行打开，若不了解的请在文件夹目录部分输入`cmd` 并回车。在其弹出的黑色窗口操作。[![此处输入cmd并回车](https://cdn-p.freejishu.com/img/2023/02/04/20ut.th.png)](https://img.freejishu.com/image/20ut) 
 
