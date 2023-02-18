@@ -120,7 +120,14 @@
       // body.classList.toggle("dark-mode");
     }
 
-  
+    function toggledarkMode(){
+      var body = document.body;
+      if (body.classList.contains("dark-mode")){
+        darkMode("light");}
+      else{
+        darkMode("dark");
+      }
+    }
     // 检测系统的暗色模式
     function detectDarkMode() {
       
