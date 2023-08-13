@@ -133,7 +133,9 @@
 
     // 检测系统的暗色模式
     function detectDarkMode() {
-      let components = document.getElementByClassName("components");
+      // let components = document.getElementByClassName("components");
+      var body = document.body;
+      var components = document.getElementById("component");
       if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // 如果系统的暗色模式已经关闭
         darkMode("light");
