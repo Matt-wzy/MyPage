@@ -95,6 +95,7 @@
     // darkMode 函数
     function darkMode(theme) {
       var body = document.body;
+      
       if (theme === "dark"){
         body.classList.add("dark-mode");
         const message = {
@@ -122,7 +123,9 @@
     function toggledarkMode(){
       var body = document.body;
       if (body.classList.contains("dark-mode")){
-        darkMode("light");}
+        darkMode("light");
+
+      }
       else{
         darkMode("dark");
       }
@@ -130,13 +133,21 @@
 
     // 检测系统的暗色模式
     function detectDarkMode() {
-      
+      let components = document.getElementByClassName("components");
       if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // 如果系统的暗色模式已经关闭
         darkMode("light");
+        if (body.classList.contains("dark-mode")){
+          components.onclick();
+        }
+        
+        // components.onclick();
       } else {
         // 如果系统的暗色模式已开启，则切换到默认（暗色）模式
         darkMode("dark");
+        if (!body.classList.contains("dark-mode")){
+          components.onclick();
+        }
       }
     }
   

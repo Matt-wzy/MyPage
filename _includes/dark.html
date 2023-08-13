@@ -1,6 +1,6 @@
 <script>
     (() => {
-        const func = (root, initTheme, changeTheme) => {
+        const func = (parent ,root, initTheme, changeTheme) => {
             const $ = (s) => {
                 let dom = root.querySelectorAll(s);
                 return dom.length == 1 ? dom[0] : dom;
@@ -40,6 +40,7 @@
                     stars.style.opacity = "0";
 
                     changeTheme("light");
+                    parent.setAttribute("value", "light");
                 } else {
                     mainButton.style.transform = "translateX(110em)";
                     mainButton.style.backgroundColor = "rgba(195, 200,210,1)";
@@ -62,6 +63,7 @@
                     stars.style.opacity = "1";
 
                     changeTheme("dark");
+                    parent.setAttribute("value", "dark");
                 }
 
                 isClicked = true;
@@ -221,6 +223,8 @@
                 const container = document.createElement("div");
                 // container.setAttribute("class", "container");
                 container.setAttribute("class", "container");
+                this.setAttribute("value", initTheme);
+
                 container.setAttribute("style", `font-size: ${(size / 3).toFixed(2)}px;`);
                 container.innerHTML =
                     '<div class="components"><div class="main-button"><div class="moon"></div><div class="moon"></div><div class="moon"></div></div><div class="daytime-backgrond"></div><div class="daytime-backgrond"></div><div class="daytime-backgrond"></div><div class="cloud"><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div></div><div class="cloud-light"><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div><div class="cloud-son"></div></div><div class="stars"><div class="star big"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div><div class="star big"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div><div class="star medium"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div><div class="star medium"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div><div class="star small"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div><div class="star small"><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div><div class="star-son"></div></div></div></div>';
