@@ -40,7 +40,7 @@
                     stars.style.opacity = "0";
 
                     changeTheme("light");
-                    parent.setAttribute("value", "light");
+                    // parent.setAttribute("value", "light");
                 } else {
                     mainButton.style.transform = "translateX(110em)";
                     mainButton.style.backgroundColor = "rgba(195, 200,210,1)";
@@ -63,7 +63,7 @@
                     stars.style.opacity = "1";
 
                     changeTheme("dark");
-                    parent.setAttribute("value", "dark");
+                    // parent.setAttribute("value", "dark");
                 }
 
                 isClicked = true;
@@ -223,7 +223,6 @@
                 const container = document.createElement("div");
                 // container.setAttribute("class", "container");
                 container.setAttribute("class", "container");
-                this.setAttribute("value", initTheme);
 
                 container.setAttribute("style", `font-size: ${(size / 3).toFixed(2)}px;`);
                 container.innerHTML =
