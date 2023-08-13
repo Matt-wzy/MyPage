@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    <script>
-      detectDarkMode();
-    </script>
-    
+{% include head.html %}
 
-    {% include nav.html %}
-
-    {% if page.toc==true %}
-      <aside class="toc">
-        {% include toc.html html=content %}
-      </aside>
-    {% endif %}
-
-    <div id="main" role="main" class="wrapper-content">
-      <div class="container">
-        {{ content }}
-      </div>
-    </div>
-
-    
-    <!-- 悬浮按钮 -->
-  <button id="dark-mode-button" onclick="toggledarkMode()">
-    <!-- 太阳图标 -->
-    <img src="https://cdn-p.freejishu.com/img/2022/12/31/2bwb.png" alt="亮色模式按钮" id="sun-icon">
-    <!-- 月亮图标 -->
-    <img src="https://cdn-p.freejishu.com/img/2022/12/31/2QKv.png" alt="暗色模式按钮" id="moon-icon">
-  </button>
-  <!-- End of 悬浮按钮 -->
-  </body>
-  <!-- toko -->
+<body>
+  <script>
+    detectDarkMode();
+  </script>
 
 
+  {% include nav.html %}
 
   {% if page.toc==true %}
-  <script>
-    document.getElementById("main").classList.add("withtoc");
-
-  </script>
+  <aside class="toc">
+    {% include toc.html html=content %}
+  </aside>
   {% endif %}
 
-  
+  <div id="main" role="main" class="wrapper-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
 
-  <!-- <script>function darkModeFun() {
+
+  <!-- 悬浮按钮 -->
+  <!-- <button id="dark-mode-button" onclick="toggledarkMode()">
+    <img src="https://cdn-p.freejishu.com/img/2022/12/31/2bwb.png" alt="亮色模式按钮" id="sun-icon">
+    <img src="https://cdn-p.freejishu.com/img/2022/12/31/2QKv.png" alt="暗色模式按钮" id="moon-icon">
+  </button> -->
+  <!-- End of 悬浮按钮 -->
+  <theme-button id="btn" size="3"></theme-button>
+  <script>
+    btn.addEventListener("change", e => {
+      if (e.detail === 'dark') {
+        darkMode("dark");
+      }
+      else {
+        darkMode("light");
+      }
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+<!-- toko -->
+
+
+
+{% if page.toc==true %}
+<script>
+  document.getElementById("main").classList.add("withtoc");
+
+</script>
+{% endif %}
+
+
+
+<!-- <script>function darkModeFun() {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }</script> -->
 
-  <div class="wrapper-footer-mobile">
-    <footer class="footer">
-      {% include footer.html %}
-      <!-- toko -->
-      <p id="hitokoto2">:D 获取中...</p>
-    </footer>
-    
+<div class="wrapper-footer-mobile">
+  <footer class="footer">
+    {% include footer.html %}
+    <!-- toko -->
+    <p id="hitokoto2">:D 获取中...</p>
+  </footer>
+
 
 </html>
