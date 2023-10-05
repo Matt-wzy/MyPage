@@ -106,7 +106,7 @@ exe = EXE(
 
 啊，这……其实是能加的，只能加一点点，根据[这篇文章](https://zhuanlan.zhihu.com/p/109266820)，安装  ~~pycrypto pip install pycrypto~~  (考虑到pycrypto 安装不上，应该是不需要的)（可能需要安装`pycryptodome`这个库，不清楚） `pip install tinyaes` ，然后`pyinstaller.exe -F --key 123456 xxx.py`，则**依赖库**里面的内容就能被加密啦，需要注意的是依赖库并不代表所有内容，程序的主函数还是能被反编译出来的。
 
-
+（2023/10/05补充）额……如果你经过了上述的配置的话，即需要`pyinstaller xxx.spec`的话情况，请通过编辑spec文件的方式来添加加密选项，而不是使用参数。方法也很简单，只需要在最上方的`block_cipher = None`处变更为`block_cipher = pyi_crypto.PyiBlockCipher(key='这里填写你的秘钥')` ，即可完成加密步骤。
 
 
 
